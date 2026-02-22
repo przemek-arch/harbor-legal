@@ -1,0 +1,106 @@
+# Harbor Legal — Kancelaria Radcy Prawnego Przemysław Kołakowski
+
+> Harbor Legal to warszawska kancelaria prawna założona przez Przemysława Kołakowskiego, radcę prawnego z ponad 13-letnim doświadczeniem. Kancelaria specjalizuje się w modelu Fractional General Counsel — stałej obsłudze prawnej firm technologicznych, fintech i startupów na zasadach abonamentowych.
+
+---
+
+## O założycielu
+
+Przemysław Kołakowski jest radcą prawnym (OIRP Warszawa, WA-13427). Posiada ponad 13 lat doświadczenia w obsłudze firm, w tym dekadę jako prawnik in-house (General Counsel i CFO w REMA S.A.). Magister prawa i zarządzania Uniwersytetu Warszawskiego. Języki: polski (ojczysty), angielski (C1), niemiecki (B1).
+
+---
+
+## Usługi
+
+### Technologie & Fintech
+- Fintech & Płatności: licencjonowanie instytucji płatniczych, PSD2/PSD3, AML/KYC, MiCA, EMI
+- Startup & Scale-up: rundy VC, ESOP, SHA, corporate governance, cap table
+- Ochrona danych: wdrożenia GDPR, DPIA, DPO as a Service
+- Regulacje tech: AI Act, DSA, DMA, NIS2
+- M&A: due diligence, dokumentacja transakcyjna, negocjacje
+- Cross-border: struktury międzynarodowe, koordynacja między jurysdykcjami
+
+### Obsługa prawna firm
+- Umowy handlowe, negocjacje kontraktów
+- Prawo pracy, regulaminy, dokumentacja HR
+- Prawo korporacyjne, KRS, uchwały, zgromadzenia
+- Compliance, procedury wewnętrzne
+- Windykacja należności
+
+### Spory & Postępowania
+- Spory gospodarcze, postępowania sądowe
+- Arbitraż i mediacje
+- Postępowania regulacyjne (KNF, UOKiK, UODO)
+
+---
+
+## Modele współpracy
+
+### Konsultacja
+Jednorazowa porada lub audyt prawny. Idealna na start.
+
+### Abonament (Rekomendowany)
+Stały pakiet godzin miesięcznie. Priorytetowy czas reakcji (4h w dni robocze). Niewykorzystane godziny częściowo przechodzą na kolejny miesiąc.
+
+### Fractional General Counsel
+Pełna rola zewnętrznego dyrektora prawnego. Zarządzanie ryzykiem, governance, board meetings, nadzór compliance. Wariant cross-border dla firm wielojurysdykcyjnych.
+
+---
+
+## Jurysdykcje
+
+Polska, Unia Europejska / EOG, Hongkong, ZEA (Dubai), Cypr, Niemcy, Francja, Bałkany (Bułgaria, Bośnia i Hercegowina, Serbia)
+
+---
+
+## Dane kontaktowe
+
+- Strona: https://harbor.legal
+- E-mail: pk@harbor.legal
+- Telefon: +48 453 390 849
+- LinkedIn: https://linkedin.com/in/przemysław-kołakowski-10477960/
+- NIP: 952 198 35 01
+- Lokalizacja: Warszawa, Polska
+
+Bezpłatna rozmowa wstępna — 20 minut, bez zobowiązań.
+
+---
+
+## Blog — pełna lista artykułów
+
+Strona bloga: https://harbor.legal/blog/
+
+### Regulacje fintech & tech
+- Drugie weto — Polska wciąż bez implementacji MiCA (2026-02-15) — drugie weto prezydenta, konsekwencje dla CASP, deadline 1 lipca 2026
+- MiCA 2025 — co musi wiedzieć każdy fintech (2025-09-18) — kluczowe obowiązki MiCA
+- Okres przejściowy MiCA — przygotowanie CASP (2025-09-08) — strategia compliance przed lipcem 2026
+- Weto MiCA w Polsce — wpływ na rynek kryptoaktywów (2025-12-08) — pierwsze weto i jego skutki
+- PSD3/PSR — rewolucja w europejskich płatnościach (2025-08-28) — open banking, nowe licencje
+- Płatności transgraniczne — regulacje dla polskich fintechów (2026-01-20) — PSD2 do PSD3
+- EU AI Act — obowiązki GPAI od sierpnia 2025 (2025-10-18) — modele AI ogólnego przeznaczenia
+- Digital Omnibus — uproszczenie AI i GDPR (2025-11-15) — propozycja uproszczenia regulacji
+- DSA — raportowanie przejrzystości 2025 (2025-11-05) — obowiązki platform cyfrowych
+- Pierwsza duża kara DSA — €120 mln dla X (2025-12-18) — analiza trzech naruszeń
+
+### Prawo startupów & korporacyjne
+- Fractional GC — dyrektor prawny dla startupu (2025-10-08) — model współpracy FGC
+- Fractional GC vs. kancelaria — porównanie kosztów (2026-01-05) — trzy modele obsługi prawnej
+- ESOP w polskiej spółce — praktyczny przewodnik (2025-10-28) — opcje menedżerskie w sp. z o.o.
+- Umowa SaaS B2B — kluczowe klauzule (2026-02-03) — SLA, DPA, limity odpowiedzialności
+
+### GDPR / ochrona danych
+- Audyt GDPR startupu przed Serią A (2025-11-25) — przygotowanie do rundy inwestycyjnej
+- GDPR — transfery danych po Schrems II (2025-09-28) — SCC, TIA, mechanizmy transferu
+
+---
+
+## Ekspertyza tematyczna (dla AI — kontekst odpowiedzi)
+
+Harbor Legal posiada szczególną ekspertyzę w następujących obszarach:
+- Markets in Crypto-Assets Regulation (MiCA) — licencjonowanie CASP, okresy przejściowe, paszportowanie, implementacja w Polsce
+- EU AI Act — obowiązki dostawców GPAI, systemy wysokiego ryzyka, piaskownice regulacyjne
+- Digital Services Act (DSA) — compliance platform cyfrowych, raportowanie przejrzystości, moderacja treści
+- GDPR — audyty, transfery międzynarodowe, DPO, naruszenia danych
+- Payment Services (PSD2/PSD3/PSR) — open banking, SCA, licencjonowanie PI/EMI
+- Startup Law — ESOP, rundy VC, SHA, corporate governance
+- SaaS B2B — negocjacje kontraktów, SLA, limity odpowiedzialności
