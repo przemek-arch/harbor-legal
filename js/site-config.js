@@ -310,7 +310,7 @@ var SITE = {
       date: '2026-02-03',
       tag: 'Prawo tech',
       pillar: 'tech-fintech',
-      category: 'fintech-regulacje',
+      category: 'prawo-gospodarcze',
       pinned: false,
       lang: 'pl',
       url: '/blog/umowa-saas-b2b-kluczowe-klauzule/'
@@ -334,7 +334,7 @@ var SITE = {
       date: '2026-01-05',
       tag: 'Startup',
       pillar: 'tech-fintech',
-      category: 'fintech-regulacje',
+      category: 'prawo-gospodarcze',
       pinned: false,
       lang: 'pl',
       url: '/blog/fractional-gc-vs-kancelaria-porownanie-kosztow/'
@@ -370,7 +370,7 @@ var SITE = {
       date: '2025-11-25',
       tag: 'GDPR',
       pillar: 'tech-fintech',
-      category: 'fintech-regulacje',
+      category: 'prawo-gospodarcze',
       pinned: false,
       lang: 'pl',
       url: '/blog/audyt-gdpr-startup-przed-seria-a/'
@@ -406,7 +406,7 @@ var SITE = {
       date: '2025-10-28',
       tag: 'Startup',
       pillar: 'tech-fintech',
-      category: 'fintech-regulacje',
+      category: 'prawo-gospodarcze',
       pinned: false,
       lang: 'pl',
       url: '/blog/esop-polska-spolka-praktyczny-przewodnik/'
@@ -430,7 +430,7 @@ var SITE = {
       date: '2025-10-08',
       tag: 'Startup',
       pillar: 'tech-fintech',
-      category: 'fintech-regulacje',
+      category: 'prawo-gospodarcze',
       pinned: false,
       lang: 'pl',
       url: '/blog/fractional-gc-startup-dyrektor-prawny/'
@@ -442,7 +442,7 @@ var SITE = {
       date: '2025-09-28',
       tag: 'GDPR',
       pillar: 'tech-fintech',
-      category: 'fintech-regulacje',
+      category: 'prawo-gospodarcze',
       pinned: false,
       lang: 'pl',
       url: '/blog/gdpr-transfery-danych-panstwa-trzecie-schrems/'
