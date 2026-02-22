@@ -81,7 +81,19 @@
 </section>
 
 
-<!-- ═══ USŁUGI — karty z configu ═══ -->
+<!-- ═══ HERO MINI-CARDS ═══ -->
+<div class="hero-minicards">
+  <div class="container">
+    <div class="minicards-grid">
+      <div class="minicard reveal"><div class="minicard-title">Fintech &amp; Payments</div><div class="minicard-tags">PSD2/3 &middot; AML/KYC &middot; KNF &middot; MiCA</div></div>
+      <div class="minicard reveal reveal-delay-1"><div class="minicard-title">Startup Legal</div><div class="minicard-tags">SHA &middot; ESOP &middot; VC &middot; M&amp;A &middot; GDPR</div></div>
+      <div class="minicard reveal reveal-delay-2"><div class="minicard-title">Cross-Border</div><div class="minicard-tags">EU &middot; MENA &middot; APAC &middot; AI Act &middot; DSA</div></div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══ USŁUGI — karty z configu (3 obszary) ═══ -->
 <section class="section" id="uslugi" style="background:var(--white);border-top:1px solid var(--border-light);">
   <div class="container">
     <div class="section-tag reveal">Specjalizacje</div>
@@ -89,6 +101,10 @@
     <p class="section-desc reveal reveal-delay-1">Łączę wiedzę regulacyjną z&nbsp;praktycznym doświadczeniem w&nbsp;skalowaniu firm — od seed do IPO, od pierwszej umowy po spór sądowy.</p>
     <div class="pillar-cards" id="pillarCards">
       <!-- Built dynamically by main.js from SITE.pillars -->
+    </div>
+
+    <!-- 6 numerowanych kart specjalizacji -->
+    <div class="services-detail-grid" id="homeServicesGrid" style="margin-top:56px;">
     </div>
   </div>
 </section>
@@ -137,6 +153,10 @@
             <div style="display:flex;align-items:flex-start;gap:12px;">
               <div style="color:var(--gold);font-weight:700;font-size:16px;margin-top:1px;">→</div>
               <div style="font-size:14px;color:var(--ink-soft);line-height:1.7;"><strong style="color:var(--ink);">Język, który rozumiesz</strong> — zero prawniczego żargonu, konkretne rekomendacje zamiast 20-stronicowych opinii</div>
+            </div>
+            <div style="display:flex;align-items:flex-start;gap:12px;">
+              <div style="color:var(--gold);font-weight:700;font-size:16px;margin-top:1px;">→</div>
+              <div style="font-size:14px;color:var(--ink-soft);line-height:1.7;"><strong style="color:var(--ink);">Doświadczenie cross-border</strong> — obsługa w&nbsp;9+ jurysdykcjach, sieć zaufanych partnerów lokalnych</div>
             </div>
           </div>
         </div>
@@ -282,6 +302,18 @@
 
 
 <!-- ═══ KONTAKT ═══ -->
+<!-- ═══ JURYSDYKCJE ═══ -->
+<section class="section" style="text-align:center;">
+  <div class="container">
+    <div class="section-tag reveal">Jurysdykcje</div>
+    <div class="section-title reveal">Globalny zasięg,<br>lokalna precyzja.</div>
+    <p class="section-desc reveal reveal-delay-1">Obsługa prawna w&nbsp;wielu jurysdykcjach, z&nbsp;siecią lokalnych partnerów zapewniających pełne pokrycie regulacyjne.</p>
+    <div class="jurisdiction-tags reveal reveal-delay-2" id="jurisdictionTags" style="display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:32px;">
+    </div>
+  </div>
+</section>
+
+
 <section class="contact-section" id="kontakt">
   <div class="container">
     <div class="contact-grid">
@@ -485,13 +517,33 @@
 <script src="/js/navigation.js"></script>
 <script src="/js/main.js"></script>
 
-<!-- Page-specific: blog grid on homepage -->
+<!-- Page-specific: services grid, jurisdictions, blog grid -->
 <script>
 (function() {
+  var lang = SITE.getLang();
+
+  // 6 numbered service cards on homepage
+  var servicesGrid = document.getElementById('homeServicesGrid');
+  if (servicesGrid) {
+    var services = SITE.services[lang] || SITE.services.pl;
+    var items = services['tech-fintech'] || [];
+    servicesGrid.innerHTML = items.map(function(s) {
+      return '<div class="service-card reveal"><div class="service-num">' + s.num + '</div><div class="service-name">' + s.name + '</div><div class="service-desc">' + s.desc + '</div><div class="service-tags">' + s.tags + '</div></div>';
+    }).join('');
+  }
+
+  // Jurisdiction tags
+  var jurTags = document.getElementById('jurisdictionTags');
+  if (jurTags) {
+    var jur = SITE.jurisdictions[lang] || SITE.jurisdictions.pl;
+    jurTags.innerHTML = jur.tags.map(function(t) {
+      return '<span style="background:var(--white);border:1px solid var(--border-light);border-radius:6px;padding:10px 20px;font-size:14px;color:var(--ink-soft);font-family:var(--f-body);">' + t + '</span>';
+    }).join('');
+  }
+
+  // Blog grid
   if (!window.HarborBlog) return;
   window.HarborBlog.buildGrid('homeBlogGrid', { max: 6 });
-
-  // Re-observe blog cards for scroll animation
   var grid = document.getElementById('homeBlogGrid');
   if (!grid) return;
   var io = new IntersectionObserver(function(entries) {

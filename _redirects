@@ -1,19 +1,7 @@
 # Harbor Legal — Cloudflare Pages redirects
 
-# Legacy single-page anchors → new pages
+# Clean URLs
 /index.html   /   301
-/#oferta      /uslugi/   301
-/#uslugi      /uslugi/   301
-/#wspolpraca  /wspolpraca/   301
-/#cennik      /wycena/   301
-/#kontakt     /kontakt/   301
-/#o-mnie      /o-kancelarii/   301
-/#blog        /blog/   301
 
-# EN homepage
+# EN shortcut
 /en           /en/   301
-/en.html      /en/   301
-
-# Old harborlegal.pl domain (if configured)
-# https://harborlegal.pl/* https://harbor.legal/:splat 301
-# https://www.harborlegal.pl/* https://harbor.legal/:splat 301
