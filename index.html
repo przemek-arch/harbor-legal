@@ -103,8 +103,6 @@
       <!-- Built dynamically by main.js from SITE.pillars -->
     </div>
 
-    <!-- 6 numerowanych kart specjalizacji -->
-    <div class="services-detail-grid" id="homeServicesGrid" style="margin-top:56px;">
     </div>
   </div>
 </section>
@@ -302,18 +300,6 @@
 
 
 <!-- ═══ KONTAKT ═══ -->
-<!-- ═══ JURYSDYKCJE ═══ -->
-<section class="section" style="text-align:center;">
-  <div class="container">
-    <div class="section-tag reveal">Jurysdykcje</div>
-    <div class="section-title reveal">Globalny zasięg,<br>lokalna precyzja.</div>
-    <p class="section-desc reveal reveal-delay-1">Obsługa prawna w&nbsp;wielu jurysdykcjach, z&nbsp;siecią lokalnych partnerów zapewniających pełne pokrycie regulacyjne.</p>
-    <div class="jurisdiction-tags reveal reveal-delay-2" id="jurisdictionTags" style="display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:32px;">
-    </div>
-  </div>
-</section>
-
-
 <section class="contact-section" id="kontakt">
   <div class="container">
     <div class="contact-grid">
@@ -521,25 +507,6 @@
 <script>
 (function() {
   var lang = SITE.getLang();
-
-  // 6 numbered service cards on homepage
-  var servicesGrid = document.getElementById('homeServicesGrid');
-  if (servicesGrid) {
-    var services = SITE.services[lang] || SITE.services.pl;
-    var items = services['tech-fintech'] || [];
-    servicesGrid.innerHTML = items.map(function(s) {
-      return '<div class="service-card reveal"><div class="service-num">' + s.num + '</div><div class="service-name">' + s.name + '</div><div class="service-desc">' + s.desc + '</div><div class="service-tags">' + s.tags + '</div></div>';
-    }).join('');
-  }
-
-  // Jurisdiction tags
-  var jurTags = document.getElementById('jurisdictionTags');
-  if (jurTags) {
-    var jur = SITE.jurisdictions[lang] || SITE.jurisdictions.pl;
-    jurTags.innerHTML = jur.tags.map(function(t) {
-      return '<span style="background:var(--white);border:1px solid var(--border-light);border-radius:6px;padding:10px 20px;font-size:14px;color:var(--ink-soft);font-family:var(--f-body);">' + t + '</span>';
-    }).join('');
-  }
 
   // Blog grid
   if (!window.HarborBlog) return;
