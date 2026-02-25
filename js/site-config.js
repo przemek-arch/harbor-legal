@@ -522,8 +522,8 @@ var SITE = {
   process: {
     pl: [
       { num: '01', title: 'Bezpłatna rozmowa wstępna', desc: '20-minutowa rozmowa, podczas której poznaję Twój biznes, identyfikuję kluczowe ryzyka i\u00a0proponuję zakres współpracy.' },
-      { num: '02', title: 'Audyt i roadmapa', desc: 'Przegląd stanu prawnego firmy i przygotowanie priorytetyzowanej mapy działań \u2014 od quick wins po długoterminowy compliance.' },
-      { num: '03', title: 'Wdrożenie i bieżąca obsługa', desc: 'Realizacja uzgodnionych działań w wybranym modelu współpracy. Regularne raporty, szybki czas reakcji, pełna dyspozycyjność.' },
+      { num: '02', title: 'Audyt i plan działania', desc: 'Przegląd stanu prawnego firmy i przygotowanie priorytetyzowanej mapy działań \u2014 od quick wins po długoterminowy compliance.' },
+      { num: '03', title: 'Wdrożenie i bieżąca obsługa', desc: 'Realizacja uzgodnionych działań w wybranym modelu współpracy. Bez formalnych barier \u2014 piszesz, dzwonisz, dostajesz odpowiedź.' },
     ],
     en: [
       { num: '01', title: 'Free initial call', desc: '20-minute call where I learn about your business, identify key risks and propose scope of cooperation.' },
