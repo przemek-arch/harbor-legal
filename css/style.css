@@ -75,7 +75,7 @@ a:hover { color: var(--indigo-light); }
 .nav-logo { height: 52px; width: auto; display: block; }
 .nav-logo-mobile { display: none; height: 34px; width: auto; }
 .nav-name { display: none; }
-.nav-links { display: flex; align-items: center; gap: 28px; }
+.nav-links { display: flex; align-items: baseline; gap: 28px; }
 .nav-links a {
   font-size: 12px; font-weight: 500; color: var(--ink-muted);
   letter-spacing: .06em; text-transform: uppercase;
@@ -93,6 +93,7 @@ a:hover { color: var(--indigo-light); }
   color: var(--white) !important; background: var(--indigo);
   padding: 12px 32px; border-radius: 8px;
   letter-spacing: .1em;
+  align-self: center;
 }
 .nav-cta:hover { background: var(--indigo-light); }
 .nav-cta::after { display: none !important; }
@@ -710,8 +711,6 @@ a:hover { color: var(--indigo-light); }
   .model-grid { grid-template-columns: 1fr; }
   .form-row { grid-template-columns: 1fr; }
   .about-stats { grid-template-columns: 1fr 1fr; }
-  .blog-grid { grid-template-columns: 1fr; }
-  #oferta [style*="grid-template-columns:1fr 1fr"] { grid-template-columns: 1fr !important; }
   .footer-inner { flex-direction: column; }
   .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
   .nav-logo { display: none; }
@@ -724,6 +723,7 @@ a:hover { color: var(--indigo-light); }
   display: flex; align-items: center; gap: 4px;
   margin-left: 16px; padding-left: 16px;
   border-left: 1px solid var(--border-light);
+  align-self: center;
 }
 .lang-switch a {
   font-family: var(--f-mono); font-size: 10px; letter-spacing: .1em;

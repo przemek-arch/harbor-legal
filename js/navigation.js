@@ -14,7 +14,7 @@
     navConfig.items.forEach(function(item) {
       if (item.megamenu && item.groups) {
         html += '<div class="nav-item">';
-        html += '<a href="' + item.href + '">' + item.label + ' <span style="font-size:8px;vertical-align:1px;">▾</span></a>';
+        html += '<a href="' + item.href + '">' + item.label + ' <span style="font-size:8px;vertical-align:middle;margin-left:2px;">▾</span></a>';
         html += '<div class="megamenu">';
         item.groups.forEach(function(group) {
           html += '<div class="megamenu-group">';

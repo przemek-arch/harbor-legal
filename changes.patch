@@ -1,0 +1,219 @@
+diff --git a/css/components.css b/css/components.css
+index e090f22..fd08e54 100644
+--- a/css/components.css
++++ b/css/components.css
+@@ -4,8 +4,8 @@
+    ═══════════════════════════════════════════ */
+ 
+ /* ─── MEGAMENU ─── */
+-.nav-item { position: relative; display: flex; align-items: center; }
+-.nav-item > a { cursor: pointer; }
++.nav-item { position: relative; display: inline-flex; align-items: center; }
++.nav-item > a { cursor: pointer; line-height: inherit; }
+ 
+ .megamenu {
+   position: absolute; top: 100%; left: 50%; transform: translateX(-50%);
+@@ -343,6 +343,60 @@
+ }
+ .article-body p { margin-bottom: 16px; font-size: 15px; line-height: 1.8; color: var(--ink-soft); }
+ 
++/* ─── OFERTA SECTION ─── */
++.oferta-grid {
++  display: grid; grid-template-columns: 1fr 1fr; gap: 48px;
++  margin-top: 56px; align-items: start;
++}
++.oferta-block { margin-bottom: 36px; }
++.oferta-block:last-child { margin-bottom: 0; }
++.oferta-heading {
++  font-family: var(--f-display); font-weight: 600; font-size: 22px;
++  margin-bottom: 12px; color: var(--ink);
++}
++.oferta-text {
++  font-size: 15px; color: var(--ink-soft); line-height: 1.8;
++}
++.oferta-card {
++  background: var(--bg); border: 1px solid var(--border-light);
++  border-radius: 8px; padding: 32px; margin-bottom: 20px;
++}
++.oferta-card-label {
++  font-family: var(--f-mono); font-size: 10px; letter-spacing: .2em;
++  text-transform: uppercase; color: var(--indigo); margin-bottom: 16px;
++}
++.oferta-benefits { display: flex; flex-direction: column; gap: 14px; }
++.oferta-benefit { display: flex; align-items: flex-start; gap: 12px; }
++.oferta-benefit-arrow {
++  color: var(--gold); font-weight: 700; font-size: 16px;
++  margin-top: 1px; flex-shrink: 0;
++}
++.oferta-benefit-text {
++  font-size: 14px; color: var(--ink-soft); line-height: 1.7;
++}
++.oferta-benefit-text strong { color: var(--ink); }
++.oferta-cta-card {
++  background: var(--indigo); border-radius: 8px; padding: 32px;
++  color: rgba(255,255,255,.9);
++}
++.oferta-cta-label {
++  font-family: var(--f-mono); font-size: 10px; letter-spacing: .2em;
++  text-transform: uppercase; color: var(--gold-light); margin-bottom: 12px;
++}
++.oferta-cta-title {
++  font-family: var(--f-display); font-weight: 500; font-size: 22px;
++  color: #fff; margin-bottom: 12px; line-height: 1.3;
++}
++.oferta-cta-desc {
++  font-size: 14px; line-height: 1.7; margin-bottom: 20px; opacity: .8;
++}
++.oferta-cta-btn {
++  background: var(--gold); color: var(--ink); font-size: 11px;
++}
++@media (max-width: 768px) {
++  .oferta-grid { grid-template-columns: 1fr; }
++}
++
+ /* ─── COOKIE ─── */
+ .cookie-banner {
+   position: fixed; bottom: 0; left: 0; right: 0;
+diff --git a/css/style.css b/css/style.css
+index 453d623..e69c0a4 100644
+--- a/css/style.css
++++ b/css/style.css
+@@ -75,7 +75,7 @@ a:hover { color: var(--indigo-light); }
+ .nav-logo { height: 52px; width: auto; display: block; }
+ .nav-logo-mobile { display: none; height: 34px; width: auto; }
+ .nav-name { display: none; }
+-.nav-links { display: flex; align-items: center; gap: 28px; }
++.nav-links { display: flex; align-items: baseline; gap: 28px; }
+ .nav-links a {
+   font-size: 12px; font-weight: 500; color: var(--ink-muted);
+   letter-spacing: .06em; text-transform: uppercase;
+@@ -93,6 +93,7 @@ a:hover { color: var(--indigo-light); }
+   color: var(--white) !important; background: var(--indigo);
+   padding: 12px 32px; border-radius: 8px;
+   letter-spacing: .1em;
++  align-self: center;
+ }
+ .nav-cta:hover { background: var(--indigo-light); }
+ .nav-cta::after { display: none !important; }
+@@ -710,8 +711,6 @@ a:hover { color: var(--indigo-light); }
+   .model-grid { grid-template-columns: 1fr; }
+   .form-row { grid-template-columns: 1fr; }
+   .about-stats { grid-template-columns: 1fr 1fr; }
+-  .blog-grid { grid-template-columns: 1fr; }
+-  #oferta [style*="grid-template-columns:1fr 1fr"] { grid-template-columns: 1fr !important; }
+   .footer-inner { flex-direction: column; }
+   .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+   .nav-logo { display: none; }
+@@ -724,6 +723,7 @@ a:hover { color: var(--indigo-light); }
+   display: flex; align-items: center; gap: 4px;
+   margin-left: 16px; padding-left: 16px;
+   border-left: 1px solid var(--border-light);
++  align-self: center;
+ }
+ .lang-switch a {
+   font-family: var(--f-mono); font-size: 10px; letter-spacing: .1em;
+diff --git a/index.html b/index.html
+index cf08e7f..b43cead 100644
+--- a/index.html
++++ b/index.html
+@@ -116,54 +116,54 @@
+     <div class="section-title reveal">Prawo szyte na miarę<br>Twojego biznesu.</div>
+     <p class="section-desc reveal reveal-delay-1">Nie jestem kolejną kancelarią, która rozlicza godziny. Jestem partnerem, który rozumie Twój produkt, zna Twój rynek i&nbsp;pilnuje ryzyk, zanim staną się problemem.</p>
+ 
+-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:56px;align-items:start;">
++    <div class="oferta-grid">
+       <div>
+-        <div class="reveal" style="margin-bottom:36px;">
+-          <div style="font-family:var(--f-display);font-weight:600;font-size:22px;margin-bottom:12px;">Dla kogo pracuję</div>
+-          <p style="font-size:15px;color:var(--ink-soft);line-height:1.8;">Obsługuję firmy technologiczne, fintechy, startupy i&nbsp;MŚP — od founderów przygotowujących pierwszą rundę po spółki potrzebujące stałego wsparcia prawnego w&nbsp;codziennym biznesie. Reprezentuję też klientów w&nbsp;sporach gospodarczych i&nbsp;postępowaniach regulacyjnych.</p>
++        <div class="oferta-block reveal">
++          <div class="oferta-heading">Dla kogo pracuję</div>
++          <p class="oferta-text">Obsługuję firmy technologiczne, fintechy, startupy i&nbsp;MŚP — od founderów przygotowujących pierwszą rundę po spółki potrzebujące stałego wsparcia prawnego w&nbsp;codziennym biznesie. Reprezentuję też klientów w&nbsp;sporach gospodarczych i&nbsp;postępowaniach regulacyjnych.</p>
+         </div>
+-        <div class="reveal reveal-delay-1" style="margin-bottom:36px;">
+-          <div style="font-family:var(--f-display);font-weight:600;font-size:22px;margin-bottom:12px;">Co mnie wyróżnia</div>
+-          <p style="font-size:15px;color:var(--ink-soft);line-height:1.8;">Dekada pracy in-house nauczyła mnie myśleć jak biznes, nie jak kancelaria. Znam presję deadlineów, rozumiem burn rate i&nbsp;wiem, że „sprawdzimy i&nbsp;wrócimy za 2&nbsp;tygodnie" to nie jest odpowiedź, której potrzebujesz. Odpowiadam szybko, piszę zrozumiale i&nbsp;zawsze mówię, co bym zrobił na Twoim miejscu.</p>
++        <div class="oferta-block reveal reveal-delay-1">
++          <div class="oferta-heading">Co mnie wyróżnia</div>
++          <p class="oferta-text">Dekada pracy in-house nauczyła mnie myśleć jak biznes, nie jak kancelaria. Znam presję deadlineów, rozumiem burn rate i&nbsp;wiem, że „sprawdzimy i&nbsp;wrócimy za 2&nbsp;tygodnie" to nie jest odpowiedź, której potrzebujesz. Odpowiadam szybko, piszę zrozumiale i&nbsp;zawsze mówię, co bym zrobił na Twoim miejscu.</p>
+         </div>
+-        <div class="reveal reveal-delay-2">
+-          <div style="font-family:var(--f-display);font-weight:600;font-size:22px;margin-bottom:12px;">Jak wygląda współpraca</div>
+-          <p style="font-size:15px;color:var(--ink-soft);line-height:1.8;">Zaczynamy od bezpłatnej rozmowy (20&nbsp;min), na której poznaję Twój biznes i&nbsp;identyfikuję priorytety. Następnie proponuję model współpracy — jednorazową konsultację, abonament lub rolę Fractional GC. Bez ukrytych kosztów, z&nbsp;przejrzystymi zasadami od pierwszego dnia.</p>
++        <div class="oferta-block reveal reveal-delay-2">
++          <div class="oferta-heading">Jak wygląda współpraca</div>
++          <p class="oferta-text">Zaczynamy od bezpłatnej rozmowy (20&nbsp;min), na której poznaję Twój biznes i&nbsp;identyfikuję priorytety. Następnie proponuję model współpracy — jednorazową konsultację, abonament lub rolę Fractional GC. Bez ukrytych kosztów, z&nbsp;przejrzystymi zasadami od pierwszego dnia.</p>
+         </div>
+       </div>
+ 
+       <div>
+-        <div class="reveal" style="background:var(--bg);border:1px solid var(--border-light);border-radius:8px;padding:32px;margin-bottom:20px;">
+-          <div style="font-family:var(--f-mono);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--indigo);margin-bottom:16px;">Co dostajesz</div>
+-          <div style="display:flex;flex-direction:column;gap:14px;">
+-            <div style="display:flex;align-items:flex-start;gap:12px;">
+-              <div style="color:var(--gold);font-weight:700;font-size:16px;margin-top:1px;">→</div>
+-              <div style="font-size:14px;color:var(--ink-soft);line-height:1.7;"><strong style="color:var(--ink);">Priorytetowy czas reakcji</strong> — odpowiedź w&nbsp;ciągu 4h w&nbsp;dni robocze, pilne sprawy tego samego dnia</div>
++        <div class="oferta-card reveal">
++          <div class="oferta-card-label">Co dostajesz</div>
++          <div class="oferta-benefits">
++            <div class="oferta-benefit">
++              <div class="oferta-benefit-arrow">→</div>
++              <div class="oferta-benefit-text"><strong>Priorytetowy czas reakcji</strong> — odpowiedź w&nbsp;ciągu 4h w&nbsp;dni robocze, pilne sprawy tego samego dnia</div>
+             </div>
+-            <div style="display:flex;align-items:flex-start;gap:12px;">
+-              <div style="color:var(--gold);font-weight:700;font-size:16px;margin-top:1px;">→</div>
+-              <div style="font-size:14px;color:var(--ink-soft);line-height:1.7;"><strong style="color:var(--ink);">Jeden punkt kontaktowy</strong> — koniec z&nbsp;koordynowaniem 3 kancelarii, które nie wiedzą o&nbsp;sobie nawzajem</div>
++            <div class="oferta-benefit">
++              <div class="oferta-benefit-arrow">→</div>
++              <div class="oferta-benefit-text"><strong>Jeden punkt kontaktowy</strong> — koniec z&nbsp;koordynowaniem 3 kancelarii, które nie wiedzą o&nbsp;sobie nawzajem</div>
+             </div>
+-            <div style="display:flex;align-items:flex-start;gap:12px;">
+-              <div style="color:var(--gold);font-weight:700;font-size:16px;margin-top:1px;">→</div>
+-              <div style="font-size:14px;color:var(--ink-soft);line-height:1.7;"><strong style="color:var(--ink);">Pełen zakres</strong> — umowy, regulaminy, compliance, GDPR, negocjacje, spory — w jednym miejscu</div>
++            <div class="oferta-benefit">
++              <div class="oferta-benefit-arrow">→</div>
++              <div class="oferta-benefit-text"><strong>Pełen zakres</strong> — umowy, regulaminy, compliance, GDPR, negocjacje, spory — w jednym miejscu</div>
+             </div>
+-            <div style="display:flex;align-items:flex-start;gap:12px;">
+-              <div style="color:var(--gold);font-weight:700;font-size:16px;margin-top:1px;">→</div>
+-              <div style="font-size:14px;color:var(--ink-soft);line-height:1.7;"><strong style="color:var(--ink);">Język, który rozumiesz</strong> — zero prawniczego żargonu, konkretne rekomendacje zamiast 20-stronicowych opinii</div>
++            <div class="oferta-benefit">
++              <div class="oferta-benefit-arrow">→</div>
++              <div class="oferta-benefit-text"><strong>Język, który rozumiesz</strong> — zero prawniczego żargonu, konkretne rekomendacje zamiast 20-stronicowych opinii</div>
+             </div>
+-            <div style="display:flex;align-items:flex-start;gap:12px;">
+-              <div style="color:var(--gold);font-weight:700;font-size:16px;margin-top:1px;">→</div>
+-              <div style="font-size:14px;color:var(--ink-soft);line-height:1.7;"><strong style="color:var(--ink);">Doświadczenie cross-border</strong> — obsługa w&nbsp;9+ jurysdykcjach, sieć zaufanych partnerów lokalnych</div>
++            <div class="oferta-benefit">
++              <div class="oferta-benefit-arrow">→</div>
++              <div class="oferta-benefit-text"><strong>Doświadczenie cross-border</strong> — obsługa w&nbsp;9+ jurysdykcjach, sieć zaufanych partnerów lokalnych</div>
+             </div>
+           </div>
+         </div>
+ 
+-        <div class="reveal reveal-delay-1" style="background:var(--indigo);border-radius:8px;padding:32px;color:rgba(255,255,255,.9);">
+-          <div style="font-family:var(--f-mono);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-light);margin-bottom:12px;">Bezpłatna konsultacja</div>
+-          <div style="font-family:var(--f-display);font-weight:500;font-size:22px;color:#fff;margin-bottom:12px;line-height:1.3;">Porozmawiajmy o&nbsp;tym, czego potrzebuje Twoja firma.</div>
+-          <p style="font-size:14px;line-height:1.7;margin-bottom:20px;opacity:.8;">20 minut, bez zobowiązań. Powiem Ci, czy i&nbsp;jak mogę pomóc — a&nbsp;jeśli nie jestem najlepszym adresem, wskażę kto jest.</p>
+-          <a href="/kontakt/" class="btn-primary" style="background:var(--gold);color:var(--ink);font-size:11px;">Umów rozmowę</a>
++        <div class="oferta-cta-card reveal reveal-delay-1">
++          <div class="oferta-cta-label">Bezpłatna konsultacja</div>
++          <div class="oferta-cta-title">Porozmawiajmy o&nbsp;tym, czego potrzebuje Twoja firma.</div>
++          <p class="oferta-cta-desc">20 minut, bez zobowiązań. Powiem Ci, czy i&nbsp;jak mogę pomóc — a&nbsp;jeśli nie jestem najlepszym adresem, wskażę kto jest.</p>
++          <a href="/kontakt/" class="btn-primary oferta-cta-btn">Umów rozmowę</a>
+         </div>
+       </div>
+     </div>
+diff --git a/js/navigation.js b/js/navigation.js
+index 7d181f9..93cf7e3 100644
+--- a/js/navigation.js
++++ b/js/navigation.js
+@@ -14,7 +14,7 @@
+     navConfig.items.forEach(function(item) {
+       if (item.megamenu && item.groups) {
+         html += '<div class="nav-item">';
+-        html += '<a href="' + item.href + '">' + item.label + ' <span style="font-size:8px;vertical-align:1px;">▾</span></a>';
++        html += '<a href="' + item.href + '">' + item.label + ' <span style="font-size:8px;vertical-align:middle;margin-left:2px;">▾</span></a>';
+         html += '<div class="megamenu">';
+         item.groups.forEach(function(group) {
+           html += '<div class="megamenu-group">';
