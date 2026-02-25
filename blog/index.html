@@ -4,71 +4,249 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Blog — Harbor Legal</title>
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232D2B6B'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-weight='700' font-size='22' fill='white'%3EH%3C/text%3E%3C/svg%3E">
-<meta name="theme-color" content="#2D2B6B">
-<meta name="description" content="Artykuły o regulacjach, compliance i prawie technologicznym. Praktyczne analizy bez prawniczego żargonu. Harbor Legal.">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<meta name="description" content="Artykuły o regulacjach fintech, GDPR, MiCA, AI Act, DSA i prawie technologicznym.">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://harbor.legal/blog/">
-<link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/">
-<link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/">
-<link rel="alternate" hreflang="x-default" href="https://harbor.legal/en/blog/">
-<meta property="og:title" content="Blog — Harbor Legal">
-<meta property="og:description" content="Artykuły o regulacjach, compliance i prawie technologicznym. Praktyczne analizy bez prawniczego żargonu.">
-<meta property="og:url" content="https://harbor.legal/blog/">
-<meta property="og:type" content="website">
-<meta property="og:locale" content="pl_PL">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Outfit:wght@200;300;400;500;600&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/css/style.css">
-<link rel="stylesheet" href="/css/components.css">
-<script src="/js/site-config.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Outfit:wght@200;300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #F7F5F2; --bg-alt: #EDE9E3; --white: #FFFFFF;
+  --ink: #1A1D2B; --ink-soft: #3A3E50; --ink-muted: #6B7088;
+  --indigo: #2D2B6B; --indigo-light: #4A47A0;
+  --gold: #B8924A; --border: #DDD8D0; --border-light: #EAE6E0;
+  --f-display: 'Cormorant Garamond', Georgia, serif;
+  --f-body: 'Outfit', sans-serif;
+}
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--f-body); font-weight: 300; line-height: 1.7; }
+a { color: var(--indigo); text-decoration: none; }
+a:hover { color: var(--indigo-light); }
+.container { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+.blog-header { padding: 40px 0 20px; border-bottom: 1px solid var(--border-light); margin-bottom: 32px; }
+.blog-nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 32px; }
+.blog-nav a { font-size: 13px; font-weight: 400; color: var(--ink-muted); letter-spacing: .04em; }
+.lang-switch-link { font-size: 12px; color: var(--ink-muted); padding: 3px 10px; border: 1px solid var(--border); border-radius: 3px; }
+.blog-heading { font-family: var(--f-display); font-size: 36px; font-weight: 600; color: var(--ink); margin-bottom: 12px; }
+.blog-subtitle { font-size: 15px; color: var(--ink-muted); line-height: 1.6; }
+.blog-filters { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 32px; }
+.filter-btn { background: transparent; border: 1px solid var(--border); color: var(--ink-muted); padding: 6px 16px; border-radius: 20px; font-size: 13px; font-family: var(--f-body); cursor: pointer; transition: all .2s; }
+.filter-btn:hover { border-color: var(--indigo); color: var(--indigo); }
+.filter-btn.active { background: var(--indigo); color: white; border-color: var(--indigo); }
+.blog-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 24px; }
+.blog-card { display: flex; flex-direction: column; background: var(--white); border: 1px solid var(--border-light); border-radius: 8px; padding: 24px; transition: all .2s; text-decoration: none; }
+.blog-card:hover { border-color: var(--indigo); transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,.06); }
+.blog-card-tag { font-size: 11px; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: var(--indigo); margin-bottom: 12px; }
+.blog-card-title { font-family: var(--f-display); font-size: 20px; font-weight: 600; color: var(--ink); line-height: 1.3; margin-bottom: 12px; }
+.blog-card-excerpt { font-size: 14px; color: var(--ink-muted); line-height: 1.6; flex: 1; margin-bottom: 16px; }
+.blog-card-footer { display: flex; justify-content: space-between; align-items: center; padding-top: 12px; border-top: 1px solid var(--border-light); }
+.blog-card-date { font-size: 12px; color: var(--ink-muted); }
+.blog-card-link { font-size: 13px; color: var(--indigo); font-weight: 400; }
+.footer { background: #111320; padding: 48px 0 36px; color: rgba(255,255,255,.4); margin-top: 64px; }
+.footer-inner { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 36px; }
+.footer-legal { font-size: 11px; line-height: 1.6; }
+.footer-links { display: flex; gap: 28px; }
+.footer-links a { color: rgba(255,255,255,.4); text-decoration: none; font-size: 12px; letter-spacing: .06em; }
+.footer-links a:hover { color: rgba(255,255,255,.7); }
+.footer-bottom { display: flex; justify-content: space-between; align-items: center; margin-top: 36px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.06); }
+.footer-copy { font-size: 11px; }
+@media (max-width: 600px) {
+  .blog-heading { font-size: 28px; }
+  .blog-grid { grid-template-columns: 1fr; }
+  .container { padding: 0 16px; }
+  .footer-inner { flex-direction: column; }
+  .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+}
+</style>
 </head>
 <body>
 
-<nav class="nav" id="navbar">
-  <div class="container nav-inner">
-    <a href="/" class="nav-brand">
-      <svg class="nav-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 110" aria-label="Harbor Legal"><text x="150" y="93" text-anchor="middle" font-family="'Outfit',sans-serif" font-weight="400" font-size="32" fill="#B8924A" letter-spacing="8">LEGAL</text><text x="150" y="46" text-anchor="middle" font-family="'Cormorant Garamond',Georgia,serif" font-weight="600" font-size="58" fill="#2D2B6B" letter-spacing="2">Harbor</text></svg>
-      <svg class="nav-logo-mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 50" aria-label="Harbor Legal"><text x="6" y="38" font-family="'Cormorant Garamond',Georgia,serif" font-weight="600" font-size="46" fill="#2D2B6B" letter-spacing="2">Harbor</text><text x="160" y="38" font-family="'Outfit',sans-serif" font-weight="400" font-size="25" fill="#B8924A" letter-spacing="6">LEGAL</text></svg>
-    </a>
-    <div class="nav-links" id="navLinks"></div>
-    <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
-  </div>
-</nav>
-
-<section class="pillar-hero">
-  <div class="container">
-    <div class="breadcrumbs" id="breadcrumbs" data-crumbs='[{"label":"Blog","href":"/blog/"}]'></div>
-    <div class="section-tag reveal">Insights</div>
-    <h1 class="section-title reveal">Wiedza, która chroni<br>Twój biznes.</h1>
-    <p class="section-desc reveal reveal-delay-1">Artykuły o&nbsp;regulacjach, compliance i&nbsp;prawie technologicznym. Praktyczne analizy bez prawniczego żargonu.</p>
-  </div>
-</section>
-
-<section class="section" style="background:var(--white);border-top:1px solid var(--border-light);">
-  <div class="container">
-    <div class="blog-filters" id="blogFilters"></div>
-    <div class="blog-grid" id="blogGrid" style="margin-top:40px;"></div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="section" style="text-align:center;">
-  <div class="container">
-    <div class="section-title reveal" style="font-size:32px;">Masz pytanie regulacyjne?</div>
-    <p class="section-desc reveal reveal-delay-1">Bezpłatna konsultacja wstępna — 20&nbsp;minut. Omówimy Twój problem i&nbsp;zaproponuję rozwiązanie.</p>
-    <div style="margin-top:32px;" class="reveal reveal-delay-2">
-      <a href="/kontakt/" class="btn-primary">Umów konsultację</a>
+<div class="container">
+  <div class="blog-header">
+    <div class="blog-nav">
+      <a href="/">← Powrót na stronę główną</a>
+      <a href="/en/blog/" class="lang-switch-link">EN</a>
     </div>
+    <h1 class="blog-heading">Blog</h1>
+    <p class="blog-subtitle">Artykuły o regulacjach, compliance i prawie technologicznym.<br>Praktyczna analiza bez prawniczego żargonu.</p>
   </div>
-</section>
 
-<footer class="footer"><div class="container"><div class="footer-inner"><div><svg style="height:44px;width:auto;margin-bottom:12px;display:block;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 110"><text x="150" y="93" text-anchor="middle" font-family="'Outfit',sans-serif" font-weight="400" font-size="32" fill="#B8924A" letter-spacing="8">LEGAL</text><text x="150" y="46" text-anchor="middle" font-family="'Cormorant Garamond',Georgia,serif" font-weight="600" font-size="58" fill="#FFFFFF" letter-spacing="2">Harbor</text></svg><div class="footer-legal" id="footerLegal"></div></div><div class="footer-links"><a href="/uslugi/">Usługi</a><a href="/wspolpraca/">Współpraca</a><a href="/o-kancelarii/">O&nbsp;kancelarii</a><a href="/blog/">Blog</a><a href="/kontakt/">Kontakt</a></div></div><div class="footer-bottom"><div class="footer-copy">© 2026 Harbor Legal. Wszelkie prawa zastrzeżone.</div><div class="footer-copy"><a href="/polityka-prywatnosci" style="color:rgba(255,255,255,.35);">Polityka prywatności</a></div></div></div></footer>
-<div class="cookie-banner" id="cookieBanner"><div>Ta strona wykorzystuje pliki cookies zgodnie z&nbsp;<a href="/polityka-prywatnosci" style="color:var(--gold-light);">polityką prywatności</a>.</div><button class="cookie-btn" onclick="closeCookie()">Akceptuję</button></div>
-<div class="article-overlay" id="articleOverlay"><div class="article-panel"><div class="article-header"><span class="article-back-label">← Wróć</span><button class="article-close" id="articleClose" aria-label="Zamknij">✕</button></div><div class="article-body" id="articleBody"></div></div></div>
+  <div class="blog-filters">
+    <button class="filter-btn active" data-tag="all">Wszystkie</button>
+        <button class="filter-btn" data-tag="Fintech">Fintech</button>
+        <button class="filter-btn" data-tag="GDPR">GDPR</button>
+        <button class="filter-btn" data-tag="Prawo tech">Prawo tech</button>
+        <button class="filter-btn" data-tag="Regulacje">Regulacje</button>
+        <button class="filter-btn" data-tag="Startup">Startup</button>
+  </div>
 
-<script src="/js/navigation.js"></script>
-<script src="/js/main.js"></script>
+  <div class="blog-grid" id="blogGrid">
+    
+      <a href="/blog/drugie-weto-polska-implementacja-mica/" class="blog-card">
+        <div class="blog-card-tag">Regulacje</div>
+        <h3 class="blog-card-title">Drugie weto — Polska wciąż bez implementacji MiCA</h3>
+        <p class="blog-card-excerpt">Prezydent Nawrocki zawetował ustawę o kryptoaktywach po raz drugi 12 lutego 2026 r. Z deadline MiCA za kilka miesięcy, polskie firmy kryptowalutowe stoją przed krytycznymi decyzjami.</p>
+        <div class="blog-card-footer">
+          <span class="blog-card-date">15 lutego 2026</span>
+          <span class="blog-card-link">Czytaj dalej →</span>
+        </div>
+      </a>
+      <a href="/blog/umowa-saas-b2b-kluczowe-klauzule/" class="blog-card">
+        <div class="blog-card-tag">Prawo tech</div>
+        <h3 class="blog-card-title">Umowa SaaS B2B — kluczowe klauzule do negocjacji</h3>
+        <p class="blog-card-excerpt">Praktyczny przewodnik po klauzulach, które mają największe znaczenie w umowach SaaS B2B — od SLA i limitów odpowiedzialności po przenoszenie danych i warunki wyjścia.</p>
+        <div class="blog-card-footer">
+          <span class="blog-card-date">3 lutego 2026</span>
+          <span class="blog-card-link">Czytaj dalej →</span>
+        </div>
+      </a>
+      <a href="/blog/platnosci-transgraniczne-regulacje-polskie-fintechy/" class="blog-card">
+        <div class="blog-card-tag">Fintech</div>
+        <h3 class="blog-card-title">Płatności transgraniczne — krajobraz regulacyjny dla polskich fintechów</h3>
+        <p class="blog-card-excerpt">Od PSD2 do PSD3/PSR — ramy regulacyjne płatności transgranicznych ewoluują. Praktyczny przegląd dla polskich firm fintech.</p>
+        <div class="blog-card-footer">
+          <span class="blog-card-date">20 stycznia 2026</span>
+          <span class="blog-card-link">Czytaj dalej →</span>
+        </div>
+      </a>
+      <a href="/blog/fractional-gc-vs-kancelaria-porownanie-kosztow/" class="blog-card">
+        <div class="blog-card-tag">Startup</div>
+        <h3 class="blog-card-title">Fractional GC vs. kancelaria zewnętrzna — porównanie kosztów</h3>
+        <p class="blog-card-excerpt">Trzy modele obsługi prawnej startupów w porównaniu: kancelaria godzinowa, Fractional GC i in-house. Który daje najlepszą wartość na jakim etapie?</p>
+        <div class="blog-card-footer">
+          <span class="blog-card-date">5 stycznia 2026</span>
+          <span class="blog-card-link">Czytaj dalej →</span>
+        </div>
+      </a>
+      <a href="/blog/dsa-pierwsza-kara-x-twitter-120-milionow/" class="blog-card">
+        <div class="blog-card-tag">Regulacje</div>
+        <h3 class="blog-card-title">Pierwsza duża kara DSA — €120 mln dla X (Twitter)</h3>
+        <p class="blog-card-excerpt">Komisja Europejska nałożyła na X karę €120 mln za naruszenia DSA. Co ten precedens oznacza dla wszystkich platform internetowych działających w UE.</p>
+        <div class="blog-card-footer">
+          <span class="blog-card-date">18 grudnia 2025</span>
+          <span class="blog-card-link">Czytaj dalej →</span>
+        </div>
+      </a>
+      <a href="/blog/polska-weto-mica-wplyw-rynek-krypto/" class="blog-card">
+        <div class="blog-card-tag">Regulacje</div>
+        <h3 class="blog-card-title">Weto MiCA w Polsce — co to oznacza dla rynku kryptoaktywów</h3>
+        <p class="blog-card-excerpt">Prezydent Nawrocki zawetował ustawę o rynku kryptoaktywów 1 grudnia 2025 r. Analiza wpływu na polskie firmy kryptowalutowe i dostępnych strategii.</p>
+        <div class="blog-card-footer">
+          <span class="blog-card-date">8 grudnia 2025</span>
+          <span class="blog-card-link">Czytaj dalej →</span>
+        </div>
+      </a>
+      <a href="/blog/digital-omnibus-uproszczenie-ai-gdpr/" class="blog-card">
+        <div class="blog-card-tag">Regulacje</div>
+        <h3 class="blog-card-title">Digital Omnibus — co pakiet uproszczenia UE oznacza dla branży tech</h3>
+        <p class="blog-card-excerpt">Komisja Europejska opublikowała Digital Omnibus 19 listopada 2025 r. — proponując szerokie zmiany w AI Act, GDPR, NIS2 i DORA.</p>
+        <div class="blog-card-footer">
+          <span class="blog-card-date">24 listopada 2025</span>
+          <span class="blog-card-link">Czytaj dalej →</span>
+        </div>
+      </a>
+      <a href="/blog/audyt-gdpr-startup-przed-seria-a/" class="blog-card">
+        <div class="blog-card-tag">GDPR</div>
+        <h3 class="blog-card-title">Audyt GDPR dla startupu — co sprawdzić przed rundą A</h3>
+        <p class="blog-card-excerpt">Inwestorzy VC coraz dokładniej sprawdzają zgodność z GDPR podczas due diligence. Praktyczna checklista dla startupów przygotowujących się do rundy inwestycyjnej.</p>
+        <div class="blog-card-footer">
+          <span class="blog-card-date">20 października 2025</span>
+          <span class="blog-card-link">Czytaj dalej →</span>
+        </div>
+      </a>
+      <a href="/blog/esop-polska-spolka-praktyczny-przewodnik/" class="blog-card">
+        <div class="blog-card-tag">Startup</div>
+        <h3 class="blog-card-title">ESOP w polskiej spółce z o.o. — praktyczny przewodnik</h3>
+        <p class="blog-card-excerpt">Polska nie ma dedykowanych przepisów o ESOP, ale programy motywacyjne są kluczowe dla startupów. Jak wdrożyć ESOP w sp. z o.o. — aspekty korporacyjne, podatkowe i praktyczne.</p>
+        <div class="blog-card-footer">
+          <span class="blog-card-date">1 października 2025</span>
+          <span class="blog-card-link">Czytaj dalej →</span>
+        </div>
+      </a>
+      <a href="/blog/mica-okres-przejsciowy-przygotowanie-casp/" class="blog-card">
+        <div class="blog-card-tag">Regulacje</div>
+        <h3 class="blog-card-title">Okres przejściowy MiCA — jak CASP powinny przygotować się do lipca 2026</h3>
+        <p class="blog-card-excerpt">Okres przejściowy MiCA kończy się 1 lipca 2026 r. Praktyczny plan działania dla dostawców usług kryptoaktywów przygotowujących się do pełnej autoryzacji.</p>
+        <div class="blog-card-footer">
+          <span class="blog-card-date">15 września 2025</span>
+          <span class="blog-card-link">Czytaj dalej →</span>
+        </div>
+      </a>
+      <a href="/blog/dsa-raportowanie-przejrzystosci-nowe-zasady-2025/" class="blog-card">
+        <div class="blog-card-tag">Regulacje</div>
+        <h3 class="blog-card-title">DSA — nowe standardowe raporty przejrzystości od lipca 2025</h3>
+        <p class="blog-card-excerpt">Od 1 lipca 2025 r. wszystkie platformy objęte DSA muszą stosować ustandaryzowane szablony raportów przejrzystości. Co się zmieniło i jak się dostosować.</p>
+        <div class="blog-card-footer">
+          <span class="blog-card-date">1 września 2025</span>
+          <span class="blog-card-link">Czytaj dalej →</span>
+        </div>
+      </a>
+      <a href="/blog/eu-ai-act-gpai-obowiazki-sierpien-2025/" class="blog-card">
+        <div class="blog-card-tag">Regulacje</div>
+        <h3 class="blog-card-title">AI Act — obowiązki GPAI już obowiązują</h3>
+        <p class="blog-card-excerpt">Od 2 sierpnia 2025 r. dostawcy modeli GPAI muszą stosować się do AI Act. Jakie są kluczowe obowiązki i jak przygotować się na przepisy o systemach wysokiego ryzyka w 2026?</p>
+        <div class="blog-card-footer">
+          <span class="blog-card-date">18 sierpnia 2025</span>
+          <span class="blog-card-link">Czytaj dalej →</span>
+        </div>
+      </a>
+      <a href="/blog/mica-2025-co-musi-wiedziec-kazdy-fintech/" class="blog-card">
+        <div class="blog-card-tag">Regulacje</div>
+        <h3 class="blog-card-title">MiCA 2025 — co każdy fintech powinien wiedzieć</h3>
+        <p class="blog-card-excerpt">Rozporządzenie MiCA jest już w pełni obowiązujące. Przegląd kluczowych obowiązków dla dostawców usług kryptoaktywów.</p>
+        <div class="blog-card-footer">
+          <span class="blog-card-date">10 lutego 2025</span>
+          <span class="blog-card-link">Czytaj dalej →</span>
+        </div>
+      </a>
+      <a href="/blog/fractional-gc-startup-dyrektor-prawny/" class="blog-card">
+        <div class="blog-card-tag">Startup</div>
+        <h3 class="blog-card-title">Fractional GC — czy Twój startup potrzebuje dyrektora prawnego?</h3>
+        <p class="blog-card-excerpt">Model Fractional General Counsel zyskuje popularność wśród startupów. Kiedy warto go rozważyć i jak działa w praktyce.</p>
+        <div class="blog-card-footer">
+          <span class="blog-card-date">28 stycznia 2025</span>
+          <span class="blog-card-link">Czytaj dalej →</span>
+        </div>
+      </a>
+      <a href="/blog/psd3-psr-rewolucja-europejskie-platnosci/" class="blog-card">
+        <div class="blog-card-tag">Fintech</div>
+        <h3 class="blog-card-title">PSD3 i PSR — rewolucja w europejskich płatnościach</h3>
+        <p class="blog-card-excerpt">Komisja Europejska zaproponowała PSD3 i PSR. Kluczowe zmiany dla instytucji płatniczych i fintechów.</p>
+        <div class="blog-card-footer">
+          <span class="blog-card-date">15 stycznia 2025</span>
+          <span class="blog-card-link">Czytaj dalej →</span>
+        </div>
+      </a>
+      <a href="/blog/gdpr-transfery-danych-panstwa-trzecie-schrems/" class="blog-card">
+        <div class="blog-card-tag">GDPR</div>
+        <h3 class="blog-card-title">GDPR i transfery danych do państw trzecich po Schrems III</h3>
+        <p class="blog-card-excerpt">Nowe orzecznictwo TSUE wymusza przegląd mechanizmów transferu danych. Praktyczny przewodnik dla firm transgranicznych.</p>
+        <div class="blog-card-footer">
+          <span class="blog-card-date">20 grudnia 2024</span>
+          <span class="blog-card-link">Czytaj dalej →</span>
+        </div>
+      </a>
+  </div>
+</div>
+
+<footer class="footer"><div class="container"><div class="footer-inner"><div><svg style="height:44px;width:auto;margin-bottom:12px;display:block;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 110"><text x="150" y="93" text-anchor="middle" font-family="'Outfit',sans-serif" font-weight="400" font-size="32" fill="#B8924A" letter-spacing="8">LEGAL</text><text x="150" y="46" text-anchor="middle" font-family="'Cormorant Garamond',Georgia,serif" font-weight="600" font-size="58" fill="#FFFFFF" letter-spacing="2">Harbor</text></svg><div class="footer-legal">Radca prawny Przemysław Kołakowski<br>NIP: 952 198 35 01 · OIRP Warszawa WA-13427</div></div><div class="footer-links"><a href="/uslugi/">Usługi</a><a href="/wspolpraca/">Współpraca</a><a href="/o-kancelarii/">O kancelarii</a><a href="/blog/">Blog</a><a href="/kontakt/">Kontakt</a></div></div><div class="footer-bottom"><div class="footer-copy">&copy; 2026 Harbor Legal. Wszelkie prawa zastrzeżone.</div><div class="footer-copy"><a href="/polityka-prywatnosci" style="color:rgba(255,255,255,.35);">Polityka prywatności</a></div></div></div></footer>
+
+<script>
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const tag = btn.dataset.tag;
+    document.querySelectorAll('.blog-card').forEach(card => {
+      const cardTag = card.querySelector('.blog-card-tag').textContent.trim();
+      card.style.display = (tag === 'all' || cardTag === tag) ? '' : 'none';
+    });
+  });
+});
+</script>
+
 </body>
 </html>
