@@ -105,10 +105,16 @@
   if (grid && cards.length) {
     grid.innerHTML = cards.map(function(s, i) {
       var delay = i > 0 ? ' reveal-delay-' + (i % 3) : '';
-      return '<div class="service-card reveal' + delay + '">' +
+      var anchorId = s.anchor ? ' id="' + s.anchor + '"' : '';
+      var detailsHtml = '';
+      if (s.details && s.details.length) {
+        detailsHtml = '<ul class="service-details">' + s.details.map(function(d) { return '<li>' + d + '</li>'; }).join('') + '</ul>';
+      }
+      return '<div class="service-card reveal' + delay + '"' + anchorId + '>' +
         '<div class="service-num">' + s.num + '</div>' +
         '<div class="service-name">' + s.name + '</div>' +
         '<div class="service-desc">' + s.desc + '</div>' +
+        detailsHtml +
         '<div class="service-tags">' + s.tags + '</div></div>';
     }).join('');
   }
