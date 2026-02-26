@@ -71,7 +71,7 @@
 <section class="section" style="text-align:center;">
   <div class="container">
     <div class="section-title reveal" style="font-size:32px;">Masz spór lub grozi Ci<br>postępowanie regulacyjne?</div>
-    <p class="section-desc reveal reveal-delay-1">Im wcześniej się zgłosisz, tym więcej opcji. Bezpłatna rozmowa wstępna — 20&nbsp;minut. Ocenię sytuację i&nbsp;zaproponuję strategię.</p>
+    <p class="section-desc reveal reveal-delay-1" style="margin:0 auto;">Im wcześniej się zgłosisz, tym więcej opcji. Bezpłatna rozmowa wstępna — 20&nbsp;minut. Ocenię sytuację i&nbsp;zaproponuję strategię.</p>
     <div style="margin-top:32px;" class="reveal reveal-delay-2">
       <a href="/kontakt/" class="btn-primary">Umów konsultację</a>
     </div>
@@ -86,11 +86,11 @@
 <script src="/js/main.js"></script>
 <script>
 (function() {
-  var PILLAR_ID = 'spory';
+  var PILLAR_ID = 'spory-i-postepowania';
   var lang = SITE.getLang();
 
   // Service cards
-  var cards = (SITE.services[lang] || SITE.services.pl)[PILLAR_ID] || [];
+  var cards = (SITE.services[lang] || SITE.services.pl)['spory'] || [];
   var grid = document.getElementById('serviceCards');
   if (grid && cards.length) {
     grid.innerHTML = cards.map(function(s, i) {
@@ -118,7 +118,7 @@
     }).join('');
   }
 
-  // Blog
+  // Blog — uses PILLAR_ID for filtering
   if (window.HarborBlog) window.HarborBlog.buildGrid('pillarBlog', { pillar: PILLAR_ID, max: 3 });
 
   // Re-observe

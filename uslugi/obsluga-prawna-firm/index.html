@@ -61,7 +61,7 @@
 <section class="section" style="text-align:center;">
   <div class="container">
     <div class="section-title reveal" style="font-size:32px;">Szukasz stałej obsługi prawnej<br>dla swojej firmy?</div>
-    <p class="section-desc reveal reveal-delay-1">Bezpłatna rozmowa wstępna — 20&nbsp;minut. Zidentyfikuję priorytety i zaproponuję model współpracy dopasowany do Twojej skali.</p>
+    <p class="section-desc reveal reveal-delay-1" style="margin:0 auto;">Bezpłatna rozmowa wstępna — 20&nbsp;minut. Zidentyfikuję priorytety i zaproponuję model współpracy dopasowany do Twojej skali.</p>
     <div style="margin-top:32px;display:flex;gap:16px;justify-content:center;flex-wrap:wrap;" class="reveal reveal-delay-2">
       <a href="/kontakt/" class="btn-primary">Umów konsultację</a>
       <a href="/wspolpraca/" class="btn-secondary">Modele współpracy →</a>
@@ -77,9 +77,9 @@
 <script src="/js/main.js"></script>
 <script>
 (function() {
-  var PILLAR_ID = 'obsluga-firm';
+  var PILLAR_ID = 'obsluga-prawna-firm';
   var lang = SITE.getLang();
-  var cards = (SITE.services[lang] || SITE.services.pl)[PILLAR_ID] || [];
+  var cards = (SITE.services[lang] || SITE.services.pl)['obsluga-firm'] || [];
   var grid = document.getElementById('serviceCards');
   if (grid && cards.length) {
     grid.innerHTML = cards.map(function(s, i) {
