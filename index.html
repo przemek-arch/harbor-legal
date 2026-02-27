@@ -94,17 +94,14 @@
 </div>
 
 
-<!-- ═══ USŁUGI — karty z configu (3 obszary) ═══ -->
+<!-- ═══ SPECJALIZACJE ═══ -->
 <section class="section" id="uslugi" style="background:var(--white);border-top:1px solid var(--border-light);">
   <div class="container">
-    <div class="section-tag reveal">Specjalizacje</div>
-    <div class="section-title reveal">Prawo, które rozumie<br>Twój biznes.</div>
-    <p class="section-desc reveal reveal-delay-1">Łączę wiedzę regulacyjną z&nbsp;praktycznym doświadczeniem w&nbsp;skalowaniu firm — od seed do IPO, od pierwszej umowy po spór sądowy.</p>
-    <div class="spec-intro reveal reveal-delay-2" style="max-width:720px;margin:32px auto 0;font-size:15px;color:var(--ink-soft);line-height:1.8;text-align:center;">
-      Przez ponad 13&nbsp;lat budowałem doświadczenie na styku prawa, technologii i&nbsp;biznesu — jako General Counsel, doradca fintechów, negocjator transakcji M&A i&nbsp;pełnomocnik w&nbsp;sporach. Dziś pracuję w&nbsp;trzech powiązanych obszarach, które razem obejmują pełen cykl życia firmy: od strukturyzacji i&nbsp;regulacji, przez bieżącą obsługę, po ochronę interesów w&nbsp;sporze.
-    </div>
-    <div class="pillar-cards" id="pillarCards">
-      <!-- Built dynamically by main.js from SITE.pillars -->
+    <div class="section-tag reveal" style="text-align:center;">Specjalizacje</div>
+    <div class="section-title reveal" style="text-align:center;">Prawo, które rozumie<br>Twój biznes.</div>
+    <p class="section-desc reveal reveal-delay-1" style="text-align:center;">13+ lat na styku prawa, technologii i&nbsp;biznesu. Trzy obszary, które razem obejmują pełen cykl życia firmy — od strukturyzacji, przez bieżącą obsługę, po ochronę w&nbsp;sporze.</p>
+    <div class="pillar-cards-rich" id="pillarCardsRich">
+      <!-- Built dynamically by inline script below -->
     </div>
   </div>
 </section>
@@ -505,25 +502,59 @@
 <script src="/js/navigation.js"></script>
 <script src="/js/main.js"></script>
 
-<!-- Page-specific: services grid, jurisdictions, blog grid -->
+<!-- Page-specific: rich pillar cards, blog grid -->
 <script>
 (function() {
   var lang = SITE.getLang();
+  var pillars = SITE.pillars[lang] || SITE.pillars.pl;
+  var nums = ['01', '02', '03'];
+
+  // Build rich pillar cards for Specjalizacje
+  var container = document.getElementById('pillarCardsRich');
+  if (container && pillars.length) {
+    var html = '';
+    pillars.forEach(function(p, i) {
+      var delay = i > 0 ? ' reveal-delay-' + i : '';
+      html += '<a href="' + p.href + '" class="pillar-rich reveal' + delay + '">';
+      html += '<div class="pillar-rich-num">' + nums[i] + '</div>';
+      html += '<div class="pillar-rich-title">' + p.title + '</div>';
+      html += '<div class="pillar-rich-subtitle">' + p.subtitle + '</div>';
+      if (p.highlights && p.highlights.length) {
+        html += '<ul class="pillar-rich-highlights">';
+        p.highlights.forEach(function(h) {
+          html += '<li>' + h + '</li>';
+        });
+        html += '</ul>';
+      }
+      html += '<div class="pillar-rich-tags">' + p.tags + '</div>';
+      html += '<span class="pillar-rich-link">' + (lang === 'pl' ? 'Dowiedz się więcej \u2192' : 'Learn more \u2192') + '</span>';
+      html += '</a>';
+    });
+    container.innerHTML = html;
+
+    // Observe reveals
+    var io = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) {
+        if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.1 });
+    container.querySelectorAll('.reveal').forEach(function(el) { io.observe(el); });
+  }
 
   // Blog grid
   if (!window.HarborBlog) return;
   window.HarborBlog.buildGrid('homeBlogGrid', { max: 6 });
   var grid = document.getElementById('homeBlogGrid');
   if (!grid) return;
-  var io = new IntersectionObserver(function(entries) {
+  var io2 = new IntersectionObserver(function(entries) {
     entries.forEach(function(e) {
-      if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+      if (e.isIntersecting) { e.target.classList.add('visible'); io2.unobserve(e.target); }
     });
   }, { threshold: 0.1 });
   grid.querySelectorAll('.blog-card').forEach(function(el, i) {
     el.classList.add('reveal');
     if (i > 0) el.classList.add('reveal-delay-' + (i % 3));
-    io.observe(el);
+    io2.observe(el);
   });
 })();
 </script>
