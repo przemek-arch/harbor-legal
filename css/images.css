@@ -104,6 +104,28 @@
   z-index: 1;
 }
 
+/* ── Hero background illustration (full-bleed behind text) ── */
+.hero-bg-illustration {
+  position: absolute;
+  top: 0;
+  right: -5%;
+  bottom: 0;
+  width: 75%;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+.hero-bg-illustration img {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
 /* ── Pillar hero overrides when using split ── */
 .pillar-hero .hero-split .section-title,
 .pillar-hero .hero-split .section-desc,
@@ -149,5 +171,13 @@
 
   .section-bg-illustration {
     display: none;
+  }
+
+  .hero-bg-illustration {
+    position: relative;
+    width: 100%;
+    right: 0;
+    margin-bottom: 24px;
+    opacity: 0.5;
   }
 }
