@@ -1,6 +1,5 @@
 /* ═══════════════════════════════════════
    HARBOR LEGAL — Image Integration CSS
-   Dodać na końcu css/style.css
    ═══════════════════════════════════════ */
 
 /* ── Hero split layout (tekst + obraz) ── */
@@ -15,7 +14,7 @@
 .hero-split-text .section-tag,
 .hero-split-text .section-title,
 .hero-split-text .section-desc {
-  /* dziedziczą istniejące style */
+  text-align: left;
 }
 
 .hero-split-image {
@@ -35,7 +34,7 @@
   mix-blend-mode: multiply;
 }
 
-/* Fotograficzne — cień + zaokrąglenie */
+/* Fotograficzne — shadow + zaokrąglenie */
 .hero-split-image.photo {
   border-radius: 12px;
   box-shadow: 0 24px 64px rgba(45, 43, 107, 0.12);
@@ -66,7 +65,7 @@
   display: block;
 }
 
-/* ── Dekoracyjna ilustracja (pod tekstem, wyśrodkowana) ── */
+/* ── Dekoracyjna ilustracja ── */
 .section-illustration {
   max-width: 680px;
   margin: 32px auto 0;
@@ -76,9 +75,10 @@
 .section-illustration img {
   width: 100%;
   height: auto;
+  mix-blend-mode: multiply;
 }
 
-/* ── Tło dekoracyjne (subtelna ilustracja za sekcją) ── */
+/* ── Tło dekoracyjne ── */
 .section-with-bg-illustration {
   position: relative;
   overflow: hidden;
@@ -104,6 +104,17 @@
   z-index: 1;
 }
 
+/* ── Pillar hero overrides when using split ── */
+.pillar-hero .hero-split .section-title,
+.pillar-hero .hero-split .section-desc,
+.pillar-hero .hero-split .section-tag {
+  text-align: left;
+}
+
+.pillar-hero .hero-split .section-desc {
+  max-width: none;
+}
+
 /* ── Responsive ── */
 @media (max-width: 768px) {
   .hero-split {
@@ -120,6 +131,15 @@
     max-height: 280px;
     object-fit: contain;
     object-position: center;
+  }
+
+  .hero-split-text .section-tag,
+  .hero-split-text .section-title,
+  .hero-split-text .section-desc,
+  .pillar-hero .hero-split .section-title,
+  .pillar-hero .hero-split .section-desc,
+  .pillar-hero .hero-split .section-tag {
+    text-align: center;
   }
 
   .about-split {
