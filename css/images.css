@@ -2,13 +2,13 @@
    HARBOR LEGAL — Image Integration CSS
    ═══════════════════════════════════════ */
 
-/* ── Hero split layout (tekst + obraz) ── */
+/* ── Hero split layout (tekst + obraz obok siebie) ── */
 .hero-split {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 48px;
   align-items: center;
-  min-height: 420px;
+  min-height: 380px;
 }
 
 .hero-split-text .section-tag,
@@ -45,6 +45,35 @@
   filter: saturate(0.92) contrast(1.02);
 }
 
+/* ── Hero background illustration (pełne tło za tekstem) ── */
+.hero-bg-illustration {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 65%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hero-bg-illustration img {
+  width: 100%;
+  height: auto;
+  mix-blend-mode: multiply;
+  opacity: 0.75;
+}
+
+/* ── Pillar hero overrides for split ── */
+.pillar-hero .hero-split .section-title,
+.pillar-hero .hero-split .section-desc,
+.pillar-hero .hero-split .section-tag {
+  text-align: left;
+}
+
+.pillar-hero .hero-split .section-desc {
+  max-width: none;
+}
+
 /* ── About split (tekst + zdjęcie obok) ── */
 .about-split {
   display: grid;
@@ -78,65 +107,6 @@
   mix-blend-mode: multiply;
 }
 
-/* ── Tło dekoracyjne ── */
-.section-with-bg-illustration {
-  position: relative;
-  overflow: hidden;
-}
-
-.section-bg-illustration {
-  position: absolute;
-  right: -5%;
-  bottom: -10%;
-  width: 45%;
-  opacity: 0.07;
-  pointer-events: none;
-  z-index: 0;
-}
-
-.section-bg-illustration img {
-  width: 100%;
-  height: auto;
-}
-
-.section-with-bg-illustration .container {
-  position: relative;
-  z-index: 1;
-}
-
-/* ── Hero background illustration (full-bleed behind text) ── */
-.hero-bg-illustration {
-  position: absolute;
-  top: 0;
-  right: -5%;
-  bottom: 0;
-  width: 75%;
-  z-index: 0;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  overflow: hidden;
-}
-
-.hero-bg-illustration img {
-  width: 100%;
-  height: auto;
-  min-height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-/* ── Pillar hero overrides when using split ── */
-.pillar-hero .hero-split .section-title,
-.pillar-hero .hero-split .section-desc,
-.pillar-hero .hero-split .section-tag {
-  text-align: left;
-}
-
-.pillar-hero .hero-split .section-desc {
-  max-width: none;
-}
-
 /* ── Responsive ── */
 @media (max-width: 768px) {
   .hero-split {
@@ -146,11 +116,11 @@
 
   .hero-split-image {
     order: -1;
-    max-height: 280px;
+    max-height: 260px;
   }
 
   .hero-split-image img {
-    max-height: 280px;
+    max-height: 260px;
     object-fit: contain;
     object-position: center;
   }
@@ -169,15 +139,13 @@
     gap: 32px;
   }
 
-  .section-bg-illustration {
-    display: none;
-  }
-
   .hero-bg-illustration {
     position: relative;
     width: 100%;
-    right: 0;
-    margin-bottom: 24px;
-    opacity: 0.5;
+    top: auto;
+    right: auto;
+    transform: none;
+    margin-bottom: 16px;
+    opacity: 0.4;
   }
 }
