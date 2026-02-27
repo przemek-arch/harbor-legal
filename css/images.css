@@ -1,0 +1,133 @@
+/* ═══════════════════════════════════════
+   HARBOR LEGAL — Image Integration CSS
+   Dodać na końcu css/style.css
+   ═══════════════════════════════════════ */
+
+/* ── Hero split layout (tekst + obraz) ── */
+.hero-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+  min-height: 420px;
+}
+
+.hero-split-text .section-tag,
+.hero-split-text .section-title,
+.hero-split-text .section-desc {
+  /* dziedziczą istniejące style */
+}
+
+.hero-split-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-split-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Izometryczne — wtapiają się w beżowe tło */
+.hero-split-image.iso img {
+  mix-blend-mode: multiply;
+}
+
+/* Fotograficzne — cień + zaokrąglenie */
+.hero-split-image.photo {
+  border-radius: 12px;
+  box-shadow: 0 24px 64px rgba(45, 43, 107, 0.12);
+}
+
+.hero-split-image.photo img {
+  border-radius: 12px;
+  filter: saturate(0.92) contrast(1.02);
+}
+
+/* ── About split (tekst + zdjęcie obok) ── */
+.about-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: start;
+}
+
+.about-image {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 16px 48px rgba(45, 43, 107, 0.1);
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ── Dekoracyjna ilustracja (pod tekstem, wyśrodkowana) ── */
+.section-illustration {
+  max-width: 680px;
+  margin: 32px auto 0;
+  opacity: 0.9;
+}
+
+.section-illustration img {
+  width: 100%;
+  height: auto;
+}
+
+/* ── Tło dekoracyjne (subtelna ilustracja za sekcją) ── */
+.section-with-bg-illustration {
+  position: relative;
+  overflow: hidden;
+}
+
+.section-bg-illustration {
+  position: absolute;
+  right: -5%;
+  bottom: -10%;
+  width: 45%;
+  opacity: 0.07;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.section-bg-illustration img {
+  width: 100%;
+  height: auto;
+}
+
+.section-with-bg-illustration .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .hero-split {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .hero-split-image {
+    order: -1;
+    max-height: 280px;
+  }
+
+  .hero-split-image img {
+    max-height: 280px;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  .about-split {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .section-bg-illustration {
+    display: none;
+  }
+}
