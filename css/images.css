@@ -15,6 +15,9 @@
 .hero-split-text .section-title,
 .hero-split-text .section-desc {
   text-align: left;
+  margin-left: 0;
+  margin-right: 0;
+  max-width: none;
 }
 
 .hero-split-image {
@@ -72,6 +75,8 @@
 
 .pillar-hero .hero-split .section-desc {
   max-width: none;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 /* ── About split (tekst + zdjęcie obok) ── */
@@ -272,3 +277,4 @@
     gap: 20px;
   }
 }
+
