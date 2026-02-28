@@ -91,7 +91,7 @@ a:hover { color: var(--indigo-light); }
 .nav-cta {
   font-size: 11px !important; font-weight: 600 !important;
   color: var(--white) !important; background: var(--indigo);
-  padding: 12px 32px; border-radius: 8px;
+  padding: 12px 42px; border-radius: 8px;
   letter-spacing: .1em;
   align-self: center;
 }
@@ -475,12 +475,6 @@ section[style*="text-align:center"] .section-desc,
 }
 .contact-value a { color: rgba(255,255,255,.9); text-decoration: none; }
 .contact-value a:hover { color: var(--gold-light); }
-.contact-value a[href^="tel"],
-.contact-value a[href^="mailto"] {
-  font-family: var(--f-display);
-  font-size: 24px;
-  font-weight: 500;
-}
 .contact-value a[href^="https"] {
   text-decoration: underline;
   text-underline-offset: 3px;
