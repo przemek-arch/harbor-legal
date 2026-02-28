@@ -1093,7 +1093,202 @@ var SITE = {
       pinned: false,
       lang: 'en',
       url: '/en/blog/aml-obligations-anti-money-laundering-poland/'
+    },,
+
+    
+    // ── EN articles ──
+    {
+      slug: 'second-veto-poland-mica-implementation',
+      title: 'Second Veto — Poland Still Without MiCA Implementation',
+      excerpt: 'President Nawrocki vetoed the crypto-assets bill for the second time on February 12, 2026.',
+      date: '2026-02-15',
+      tag: 'Regulations',
+      pillar: 'tech-fintech',
+      category: 'fintech-regulacje',
+      pinned: true,
+      lang: 'en',
+      url: '/en/blog/second-veto-poland-mica-implementation/'
     },
+    {
+      slug: 'b2b-saas-agreement-key-clauses',
+      title: 'B2B SaaS Agreement — Key Clauses You Should Negotiate',
+      excerpt: 'A practical guide to the clauses that matter most in B2B SaaS agreements.',
+      date: '2026-02-03',
+      tag: 'Tech Law',
+      pillar: 'tech-fintech',
+      category: 'prawo-gospodarcze',
+      pinned: false,
+      lang: 'en',
+      url: '/en/blog/b2b-saas-agreement-key-clauses/'
+    },
+    {
+      slug: 'cross-border-payments-regulations-polish-fintechs',
+      title: 'Cross-Border Payments — Regulatory Landscape for Polish Fintechs',
+      excerpt: 'From PSD2 to PSD3/PSR — the regulatory framework for cross-border payments is evolving.',
+      date: '2026-01-20',
+      tag: 'Fintech',
+      pillar: 'tech-fintech',
+      category: 'fintech-regulacje',
+      pinned: false,
+      lang: 'en',
+      url: '/en/blog/cross-border-payments-regulations-polish-fintechs/'
+    },
+    {
+      slug: 'fractional-gc-vs-law-firm-cost-comparison',
+      title: 'Fractional GC vs. External Law Firm — A Cost Comparison',
+      excerpt: 'Three models of legal support for startups compared: hourly law firm, Fractional GC, and in-house counsel.',
+      date: '2026-01-05',
+      tag: 'Startup',
+      pillar: 'tech-fintech',
+      category: 'prawo-gospodarcze',
+      pinned: false,
+      lang: 'en',
+      url: '/en/blog/fractional-gc-vs-law-firm-cost-comparison/'
+    },
+    {
+      slug: 'dsa-first-fine-x-twitter-120-million',
+      title: 'DSA\'s First Major Fine — €120M for X (Twitter)',
+      excerpt: 'The European Commission fined X €120 million for DSA violations. What this precedent means for all online platforms operating in the EU.',
+      date: '2025-12-18',
+      tag: 'Regulations',
+      pillar: 'tech-fintech',
+      category: 'fintech-regulacje',
+      pinned: false,
+      lang: 'en',
+      url: '/en/blog/dsa-first-fine-x-twitter-120-million/'
+    },
+    {
+      slug: 'poland-mica-veto-crypto-market-impact',
+      title: 'Poland\'s MiCA Veto — What It Means for the Crypto Market',
+      excerpt: 'President Nawrocki vetoed the Crypto-Assets Market Act on December 1, 2025. Analysis of the impact on Polish crypto firms and available strategies.',
+      date: '2025-12-08',
+      tag: 'Regulations',
+      pillar: 'tech-fintech',
+      category: 'fintech-regulacje',
+      pinned: false,
+      lang: 'en',
+      url: '/en/blog/poland-mica-veto-crypto-market-impact/'
+    },
+    {
+      slug: 'gdpr-audit-startup-before-series-a',
+      title: 'GDPR Audit for Startups — What to Check Before Series A',
+      excerpt: 'VC investors increasingly scrutinize GDPR compliance during due diligence. A practical checklist for startups preparing for their funding round.',
+      date: '2025-11-25',
+      tag: 'GDPR',
+      pillar: 'tech-fintech',
+      category: 'prawo-gospodarcze',
+      pinned: false,
+      lang: 'en',
+      url: '/en/blog/gdpr-audit-startup-before-series-a/'
+    },
+    {
+      slug: 'digital-omnibus-simplification-ai-gdpr',
+      title: 'Digital Omnibus — What the EU\'s Simplification Package Means for Tech',
+      excerpt: 'The European Commission published the Digital Omnibus on November 19, 2025 — proposing sweeping changes to the AI Act, GDPR, NIS2, and DORA.',
+      date: '2025-11-15',
+      tag: 'Regulations',
+      pillar: 'tech-fintech',
+      category: 'fintech-regulacje',
+      pinned: false,
+      lang: 'en',
+      url: '/en/blog/digital-omnibus-simplification-ai-gdpr/'
+    },
+    {
+      slug: 'dsa-transparency-reporting-new-rules-2025',
+      title: 'DSA Transparency Reporting — New Standardized Rules from July 2025',
+      excerpt: 'From July 1, 2025, all platforms subject to the DSA must use standardized transparency reporting templates. What changed and how to comply.',
+      date: '2025-11-05',
+      tag: 'Regulations',
+      pillar: 'tech-fintech',
+      category: 'fintech-regulacje',
+      pinned: false,
+      lang: 'en',
+      url: '/en/blog/dsa-transparency-reporting-new-rules-2025/'
+    },
+    {
+      slug: 'esop-polish-company-practical-guide',
+      title: 'ESOP in a Polish Sp. z o.o. — A Practical Guide',
+      excerpt: 'Poland has no dedicated ESOP legislation, yet equity incentive programs are essential for startups. How to structure an ESOP in a sp. z o.o.',
+      date: '2025-10-28',
+      tag: 'Startup',
+      pillar: 'tech-fintech',
+      category: 'prawo-gospodarcze',
+      pinned: false,
+      lang: 'en',
+      url: '/en/blog/esop-polish-company-practical-guide/'
+    },
+    {
+      slug: 'eu-ai-act-gpai-obligations-august-2025',
+      title: 'EU AI Act — GPAI Obligations Now in Force',
+      excerpt: 'As of August 2, 2025, GPAI model providers must comply with the EU AI Act. What are the key obligations and how to prepare for the high-risk system ru',
+      date: '2025-10-18',
+      tag: 'Regulations',
+      pillar: 'tech-fintech',
+      category: 'fintech-regulacje',
+      pinned: false,
+      lang: 'en',
+      url: '/en/blog/eu-ai-act-gpai-obligations-august-2025/'
+    },
+    {
+      slug: 'fractional-gc-startup-legal-director',
+      title: 'Fractional GC — Does Your Startup Need a Legal Director?',
+      excerpt: 'The Fractional General Counsel model is gaining popularity among startups. When to consider it and how it works.',
+      date: '2025-10-08',
+      tag: 'Startup',
+      pillar: 'tech-fintech',
+      category: 'prawo-gospodarcze',
+      pinned: false,
+      lang: 'en',
+      url: '/en/blog/fractional-gc-startup-legal-director/'
+    },
+    {
+      slug: 'gdpr-third-country-data-transfers-schrems',
+      title: 'GDPR and Third-Country Data Transfers After Schrems III',
+      excerpt: 'New CJEU case law forces a review of data transfer mechanisms. A practical guide for cross-border operations.',
+      date: '2025-09-28',
+      tag: 'GDPR',
+      pillar: 'tech-fintech',
+      category: 'prawo-gospodarcze',
+      pinned: false,
+      lang: 'en',
+      url: '/en/blog/gdpr-third-country-data-transfers-schrems/'
+    },
+    {
+      slug: 'mica-2025-what-every-fintech-needs-to-know',
+      title: 'MiCA 2025 — What Every Fintech Needs to Know',
+      excerpt: 'The MiCA Regulation is now fully applicable. An overview of the key obligations for crypto-asset service providers.',
+      date: '2025-09-18',
+      tag: 'Fintech',
+      pillar: 'tech-fintech',
+      category: 'fintech-regulacje',
+      pinned: false,
+      lang: 'en',
+      url: '/en/blog/mica-2025-what-every-fintech-needs-to-know/'
+    },
+    {
+      slug: 'mica-transitional-period-casp-preparation',
+      title: 'MiCA Transitional Period — How CASPs Should Prepare Before July 2026',
+      excerpt: 'MiCA\'s transitional period ends July 1, 2026. A practical roadmap for crypto-asset service providers preparing for full authorization.',
+      date: '2025-09-08',
+      tag: 'Fintech',
+      pillar: 'tech-fintech',
+      category: 'fintech-regulacje',
+      pinned: false,
+      lang: 'en',
+      url: '/en/blog/mica-transitional-period-casp-preparation/'
+    },
+    {
+      slug: 'psd3-psr-european-payments-revolution',
+      title: 'PSD3 and PSR — Revolution in European Payments',
+      excerpt: 'The European Commission proposed PSD3 and PSR. Key changes for payment institutions and fintechs.',
+      date: '2025-08-28',
+      tag: 'Fintech',
+      pillar: 'tech-fintech',
+      category: 'fintech-regulacje',
+      pinned: false,
+      lang: 'en',
+      url: '/en/blog/psd3-psr-european-payments-revolution/'
+    }
   ],
 
 
