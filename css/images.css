@@ -331,3 +331,370 @@
     gap: 20px !important;
   }
 }
+
+/* ── Wycena page ── */
+.wycena-layout {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 64px;
+  align-items: start;
+}
+
+.wycena-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.wycena-section-label {
+  font-family: var(--f-mono);
+  font-size: 10px;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--indigo);
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border-light);
+  margin-bottom: 4px;
+}
+
+.wycena-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.wycena-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.wycena-label {
+  font-family: var(--f-mono);
+  font-size: 10px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin-bottom: 6px;
+}
+
+.wycena-optional {
+  color: var(--ink-muted);
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.wycena-input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid var(--border-light);
+  border-radius: 6px;
+  font-family: var(--f-body);
+  font-size: 15px;
+  background: var(--bg);
+  transition: border-color .2s;
+  color: var(--ink);
+}
+
+.wycena-input:focus {
+  outline: none;
+  border-color: var(--indigo);
+}
+
+.wycena-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.wycena-select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='none'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236b6b80' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  padding-right: 40px;
+}
+
+/* Chip selectors */
+.wycena-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.wycena-chip {
+  cursor: pointer;
+}
+
+.wycena-chip input {
+  display: none;
+}
+
+.wycena-chip span {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 1px solid var(--border-light);
+  border-radius: 6px;
+  font-size: 13px;
+  color: var(--ink-soft);
+  background: var(--bg);
+  transition: all .2s;
+  user-select: none;
+}
+
+.wycena-chip:hover span {
+  border-color: var(--indigo);
+  color: var(--indigo);
+}
+
+.wycena-chip input:checked + span {
+  background: var(--indigo);
+  color: var(--white);
+  border-color: var(--indigo);
+}
+
+/* Right column info cards */
+.wycena-info-card {
+  background: var(--bg);
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  padding: 32px 28px;
+}
+
+.wycena-info-tag {
+  font-family: var(--f-mono);
+  font-size: 10px;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 24px;
+}
+
+.wycena-info-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.wycena-step {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.wycena-step-num {
+  font-family: var(--f-mono);
+  font-size: 20px;
+  color: var(--gold);
+  font-weight: 300;
+  flex-shrink: 0;
+  line-height: 1;
+  padding-top: 2px;
+}
+
+.wycena-step-title {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+
+.wycena-step-text {
+  font-size: 13px;
+  color: var(--ink-soft);
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .wycena-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .wycena-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* == Wycena page == */
+.wycena-layout {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 64px;
+  align-items: start;
+}
+
+.wycena-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.wycena-section-label {
+  font-family: var(--f-mono);
+  font-size: 10px;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--indigo);
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border-light);
+  margin-bottom: 4px;
+}
+
+.wycena-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.wycena-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.wycena-label {
+  font-family: var(--f-mono);
+  font-size: 10px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin-bottom: 6px;
+}
+
+.wycena-optional {
+  color: var(--ink-muted);
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.wycena-input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid var(--border-light);
+  border-radius: 6px;
+  font-family: var(--f-body);
+  font-size: 15px;
+  background: var(--bg);
+  transition: border-color .2s;
+  color: var(--ink);
+}
+
+.wycena-input:focus {
+  outline: none;
+  border-color: var(--indigo);
+}
+
+.wycena-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.wycena-select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2712%27 height=%278%27 fill=%27none%27%3E%3Cpath d=%27M1 1l5 5 5-5%27 stroke=%27%236b6b80%27 stroke-width=%271.5%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  padding-right: 40px;
+}
+
+.wycena-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.wycena-chip {
+  cursor: pointer;
+}
+
+.wycena-chip input {
+  display: none;
+}
+
+.wycena-chip span {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 1px solid var(--border-light);
+  border-radius: 6px;
+  font-size: 13px;
+  color: var(--ink-soft);
+  background: var(--bg);
+  transition: all .2s;
+  user-select: none;
+}
+
+.wycena-chip:hover span {
+  border-color: var(--indigo);
+  color: var(--indigo);
+}
+
+.wycena-chip input:checked + span {
+  background: var(--indigo);
+  color: var(--white);
+  border-color: var(--indigo);
+}
+
+.wycena-info-card {
+  background: var(--bg);
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  padding: 32px 28px;
+}
+
+.wycena-info-tag {
+  font-family: var(--f-mono);
+  font-size: 10px;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 24px;
+}
+
+.wycena-info-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.wycena-step {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.wycena-step-num {
+  font-family: var(--f-mono);
+  font-size: 20px;
+  color: var(--gold);
+  font-weight: 300;
+  flex-shrink: 0;
+  line-height: 1;
+  padding-top: 2px;
+}
+
+.wycena-step-title {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+
+.wycena-step-text {
+  font-size: 13px;
+  color: var(--ink-soft);
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .wycena-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .wycena-row {
+    grid-template-columns: 1fr;
+  }
+}
