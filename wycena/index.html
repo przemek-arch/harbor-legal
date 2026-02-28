@@ -90,11 +90,75 @@
 
           <div class="wycena-field">
             <label class="wycena-label">Obszar <span class="wycena-optional">(opcjonalnie, można zaznaczyć kilka)</span></label>
-            <div class="wycena-chips">
+            <div class="wycena-chips" id="areaChips">
               <label class="wycena-chip"><input type="checkbox" name="area[]" value="tech-fintech"><span>Technologie &amp; Fintech</span></label>
               <label class="wycena-chip"><input type="checkbox" name="area[]" value="obsluga-firm"><span>Obsługa prawna firm</span></label>
               <label class="wycena-chip"><input type="checkbox" name="area[]" value="spory"><span>Spory &amp; Postępowania</span></label>
               <label class="wycena-chip"><input type="checkbox" name="area[]" value="inny"><span>Inny</span></label>
+            </div>
+          </div>
+
+          <!-- Pola spory — widoczne gdy zaznaczony "Spory & Postępowania" -->
+          <div id="disputeFields" style="display:none;">
+            <div class="wycena-section-label" style="margin-top:20px;">Szczegóły sporu</div>
+
+            <div class="wycena-field">
+              <label class="wycena-label">Rodzaj sporu <span class="wycena-optional">(opcjonalnie)</span></label>
+              <div class="wycena-chips">
+                <label class="wycena-chip"><input type="radio" name="dispute_type" value="kontraktowy"><span>Kontraktowy</span></label>
+                <label class="wycena-chip"><input type="radio" name="dispute_type" value="odszkodowawczy"><span>Odszkodowawczy</span></label>
+                <label class="wycena-chip"><input type="radio" name="dispute_type" value="korporacyjny"><span>Korporacyjny</span></label>
+                <label class="wycena-chip"><input type="radio" name="dispute_type" value="regulacyjny"><span>Regulacyjny (KNF/UOKiK/UODO)</span></label>
+                <label class="wycena-chip"><input type="radio" name="dispute_type" value="pracowniczy"><span>Pracowniczy</span></label>
+                <label class="wycena-chip"><input type="radio" name="dispute_type" value="inny-spor"><span>Inny</span></label>
+              </div>
+            </div>
+
+            <div class="wycena-field">
+              <label class="wycena-label">Etap sprawy <span class="wycena-optional">(opcjonalnie)</span></label>
+              <div class="wycena-chips">
+                <label class="wycena-chip"><input type="radio" name="dispute_stage" value="przedsadowy"><span>Przedsądowy / negocjacje</span></label>
+                <label class="wycena-chip"><input type="radio" name="dispute_stage" value="pozew"><span>Pozew / wniosek</span></label>
+                <label class="wycena-chip"><input type="radio" name="dispute_stage" value="w-toku"><span>Postępowanie w toku</span></label>
+                <label class="wycena-chip"><input type="radio" name="dispute_stage" value="apelacja"><span>Apelacja / kasacja</span></label>
+                <label class="wycena-chip"><input type="radio" name="dispute_stage" value="egzekucja"><span>Egzekucja</span></label>
+              </div>
+            </div>
+
+            <div class="wycena-field">
+              <label class="wycena-label">Preferowany model rozliczenia <span class="wycena-optional">(opcjonalnie)</span></label>
+              <div class="wycena-chips">
+                <label class="wycena-chip"><input type="radio" name="dispute_billing" value="godzinowa-cap"><span>Stawka godzinowa z limitem</span></label>
+                <label class="wycena-chip"><input type="radio" name="dispute_billing" value="ryczalt-etap"><span>Ryczałt za etap</span></label>
+                <label class="wycena-chip"><input type="radio" name="dispute_billing" value="success-fee"><span>Success fee</span></label>
+                <label class="wycena-chip"><input type="radio" name="dispute_billing" value="do-ustalenia"><span>Do ustalenia</span></label>
+              </div>
+            </div>
+
+            <div class="wycena-row">
+              <div class="wycena-field">
+                <label class="wycena-label">Wartość przedmiotu sporu <span class="wycena-optional">(opcjonalnie)</span></label>
+                <select name="dispute_value" class="wycena-input wycena-select">
+                  <option value="">— Wybierz —</option>
+                  <option value="do-50k">Do 50 000 PLN</option>
+                  <option value="50k-200k">50 000 – 200 000 PLN</option>
+                  <option value="200k-1m">200 000 – 1 000 000 PLN</option>
+                  <option value="1m+">Powyżej 1 000 000 PLN</option>
+                  <option value="nieznana">Trudno określić</option>
+                </select>
+              </div>
+              <div class="wycena-field">
+                <label class="wycena-label">Jurysdykcja <span class="wycena-optional">(opcjonalnie)</span></label>
+                <select name="dispute_jurisdiction" class="wycena-input wycena-select">
+                  <option value="">— Wybierz —</option>
+                  <option value="polska">Polska — sąd powszechny</option>
+                  <option value="arbitraz-pl">Polska — arbitraż (SA KIG)</option>
+                  <option value="arbitraz-miedzynarodowy">Arbitraż międzynarodowy (ICC)</option>
+                  <option value="knf-uokik">KNF / UOKiK / UODO</option>
+                  <option value="zagraniczny">Sąd zagraniczny</option>
+                  <option value="nie-wiem">Nie wiem</option>
+                </select>
+              </div>
             </div>
           </div>
 
@@ -129,13 +193,15 @@
 
           <button type="submit" class="btn-primary" style="margin-top:8px;" id="quoteSubmit">Wyślij zapytanie</button>
           <div style="font-size:11px;color:var(--ink-muted);line-height:1.6;margin-top:12px;">Wysyłając formularz wyrażasz zgodę na przetwarzanie danych osobowych zgodnie z&nbsp;<a href="/polityka-prywatnosci" style="color:var(--indigo);">polityką prywatności</a>.</div>
-
-          <!-- Success message -->
-          <div id="quoteSuccess" style="display:none;background:var(--bg);border:1px solid var(--gold);border-radius:8px;padding:24px;margin-top:20px;">
-            <div style="font-family:var(--f-display);font-weight:600;font-size:20px;color:var(--indigo);margin-bottom:8px;">Dziękuję za zapytanie!</div>
-            <p style="font-size:14px;color:var(--ink-soft);line-height:1.7;">Otrzymałem Twoje zgłoszenie. Odpowiem z&nbsp;indywidualną propozycją w&nbsp;ciągu jednego dnia roboczego.</p>
-          </div>
         </form>
+
+        <!-- Success message (outside form so it stays visible) -->
+        <div id="quoteSuccess" style="display:none;background:var(--indigo);border-radius:12px;padding:40px;margin-top:20px;text-align:center;">
+          <div style="font-size:36px;margin-bottom:16px;">✓</div>
+          <div style="font-family:var(--f-display);font-weight:600;font-size:24px;color:var(--white);margin-bottom:12px;">Dziękuję za zapytanie!</div>
+          <p style="font-size:15px;color:rgba(255,255,255,.8);line-height:1.7;max-width:400px;margin:0 auto 20px;">Otrzymałem Twoje zgłoszenie. Odpowiem z&nbsp;indywidualną propozycją w&nbsp;ciągu jednego dnia roboczego.</p>
+          <a href="/" style="font-family:var(--f-mono);font-size:11px;letter-spacing:.1em;color:var(--gold-light);text-decoration:none;">← Wróć na stronę główną</a>
+        </div>
       </div>
 
       <!-- Prawa kolumna: info -->
@@ -196,6 +262,24 @@
     var radio = document.querySelector('input[name="model"][value="' + model + '"]');
     if (radio) radio.checked = true;
   }
+
+  // Pre-fill area from URL param (?area=spory)
+  var area = params.get('area');
+  if (area) {
+    var cb = document.querySelector('input[name="area[]"][value="' + area + '"]');
+    if (cb) { cb.checked = true; toggleDisputeFields(); }
+  }
+
+  // Show/hide dispute-specific fields
+  var disputeFields = document.getElementById('disputeFields');
+  var areaChips = document.getElementById('areaChips');
+
+  function toggleDisputeFields() {
+    var sporyCb = document.querySelector('input[name="area[]"][value="spory"]');
+    disputeFields.style.display = sporyCb && sporyCb.checked ? 'block' : 'none';
+  }
+
+  areaChips.addEventListener('change', toggleDisputeFields);
 
   // Form submission with success message
   var form = document.getElementById('quoteForm');
