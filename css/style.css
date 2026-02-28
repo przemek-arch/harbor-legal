@@ -93,7 +93,7 @@ a:hover { color: var(--indigo-light); }
   color: var(--white) !important; background: var(--indigo);
   padding: 6px 18px !important; border-radius: 4px;
   letter-spacing: .1em;
-  align-self: center;
+  align-self: baseline;
 }
 .nav-cta:hover { background: var(--indigo-light); }
 .nav-cta::after { display: none !important; }
