@@ -214,7 +214,7 @@ a:hover { color: var(--indigo-light); }
 }
 
 /* ─── SECTION STYLES ─── */
-.section { padding: 100px 0; }
+.section { padding: 56px 0; }
 .section-tag {
   font-family: var(--f-mono);
   font-size: 10px; color: var(--indigo);
@@ -716,7 +716,7 @@ section[style*="text-align:center"] .section-desc,
   .nav-links.open { padding: 20px 24px; }
   .hero { padding: 120px 0 72px; }
   .hero h1 { font-size: 34px; }
-  .section { padding: 72px 0; }
+  .section { padding: 44px 0; }
   .section-title { font-size: 28px; }
   .pillars-grid { grid-template-columns: 1fr; }
   .pillar { border-right: none; border-bottom: 1px solid var(--border-light); }
