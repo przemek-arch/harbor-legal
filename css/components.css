@@ -378,7 +378,7 @@
 /* ─── OFERTA SECTION ─── */
 .oferta-grid {
   display: grid; grid-template-columns: 1fr 1fr; gap: 48px;
-  margin-top: 40px; align-items: start;
+  align-items: start;
 }
 .oferta-block { margin-bottom: 36px; }
 .oferta-block:last-child { margin-bottom: 0; }
