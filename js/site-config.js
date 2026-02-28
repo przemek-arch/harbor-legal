@@ -122,6 +122,7 @@ var SITE = {
           ]
         },
         { label: 'Cooperation', href: '/en/cooperation/' },
+        { label: 'Pricing', href: '/en/pricing/' },
         { label: 'About', href: '/en/about/' },
         { label: 'Blog', href: '/en/blog/' },
         { label: 'Contact', href: '/en/contact/', cta: true },
