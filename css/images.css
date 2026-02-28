@@ -316,3 +316,18 @@
     gap: 24px;
   }
 }
+
+/* ── Model cards hover + responsive ── */
+#modelGrid a:hover,
+.section > .container > div[style*="grid-template-columns:1fr 1fr 1fr"] > div:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 32px rgba(45, 43, 107, 0.08);
+}
+
+@media (max-width: 768px) {
+  #modelGrid,
+  .section > .container > div[style*="grid-template-columns:1fr 1fr 1fr"] {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+}

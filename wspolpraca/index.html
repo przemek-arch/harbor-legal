@@ -40,37 +40,55 @@
 </section>
 
 <!-- MODELE -->
-<section class="section model-section" style="background:var(--white);border-top:1px solid var(--border-light);">
+<section class="section" style="background:var(--white);border-top:1px solid var(--border-light);">
   <div class="container">
-    <div class="model-grid">
-      <div class="model-card reveal">
-        <div class="model-icon"><img src="/images/icon-consultation.svg" alt="Konsultacja" style="height:110px;width:auto;max-width:100%;" width="110" height="110" loading="lazy"></div>
-        <div class="model-name">Konsultacja</div>
-        <div class="model-desc">Jednorazowa porada lub audyt prawny. Idealna na start, gdy potrzebujesz szybkiej odpowiedzi na konkretne pytanie.</div>
-        <div style="margin-top:20px;font-size:13px;color:var(--ink-soft);line-height:1.8;">
-          <strong style="color:var(--ink);">Typowe zastosowania:</strong> weryfikacja umowy, opinia prawna, audyt RODO, rejestracja spółki, due diligence.
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:28px;">
+
+      <div class="reveal" style="background:var(--bg);border:1px solid var(--border-light);border-radius:12px;padding:36px 28px;display:flex;flex-direction:column;">
+        <img src="/images/icon-consultation.svg" alt="" style="width:48px;height:48px;margin-bottom:20px;">
+        <div style="font-family:var(--f-display);font-weight:600;font-size:22px;color:var(--ink);margin-bottom:8px;">Konsultacja</div>
+        <div style="font-family:var(--f-mono);font-size:11px;letter-spacing:.1em;color:var(--gold);margin-bottom:16px;">JEDNORAZOWA</div>
+        <p style="font-size:14px;color:var(--ink-soft);line-height:1.7;flex:1;">Jednorazowa porada prawna, weryfikacja umowy lub audyt. Idealna, gdy potrzebujesz szybkiej odpowiedzi na konkretne pytanie.</p>
+        <div style="margin-top:24px;padding-top:20px;border-top:1px solid var(--border-light);">
+          <div style="font-size:13px;color:var(--ink-soft);line-height:1.8;">
+            → Opinia prawna lub memorandum<br>
+            → Weryfikacja i&nbsp;redlining umowy<br>
+            → Audyt RODO lub compliance<br>
+            → Raport due diligence
+          </div>
         </div>
       </div>
-      <div class="model-card model-highlight reveal reveal-delay-1">
-        <div class="model-badge">Rekomendowany</div>
-        <div class="model-icon"><img src="/images/icon-subscription.svg" alt="Abonament" style="height:110px;width:auto;max-width:100%;" width="110" height="110" loading="lazy"></div>
-        <div class="model-name">Abonament</div>
-        <div class="model-desc">Stały pakiet godzin miesięcznie. Elastyczny zakres, priorytetowy czas reakcji, pełna ciągłość obsługi prawnej.</div>
-        <div style="margin-top:20px;font-size:13px;color:var(--ink-soft);line-height:1.8;">
-          <strong style="color:var(--ink);">Co obejmuje:</strong> bieżące doradztwo, drafting i negocjacje umów, compliance, prawo pracy, obsługa KRS. Pakiety od kilku godzin miesięcznie.
-        </div>
-        <div style="margin-top:12px;font-size:13px;color:var(--ink-soft);line-height:1.8;">
-          <strong style="color:var(--ink);">Zasady:</strong> niewykorzystane godziny częściowo przechodzą na kolejny miesiąc. Nadwyżka ponad pakiet rozliczana stawką godzinową.
-        </div>
-      </div>
-      <div class="model-card reveal reveal-delay-2">
-        <div class="model-icon"><img src="/images/icon-fractional-gc.svg" alt="Fractional GC" style="height:110px;width:auto;max-width:100%;" width="110" height="110" loading="lazy"></div>
-        <div class="model-name">Fractional GC</div>
-        <div class="model-desc">Pełna rola zewnętrznego General Counsel. Zarządzanie ryzykiem prawnym, governance, udział w&nbsp;board meetings, nadzór nad compliance.</div>
-        <div style="margin-top:20px;font-size:13px;color:var(--ink-soft);line-height:1.8;">
-          <strong style="color:var(--ink);">Dla kogo:</strong> startupy i scale-upy, które potrzebują doświadczonego prawnika na stałe, ale nie stać ich na pełnoetatowego GC. Wariant cross-border dla firm działających w&nbsp;wielu jurysdykcjach.
+
+      <div class="reveal reveal-delay-1" style="background:var(--bg);border:1px solid var(--border-light);border-radius:12px;padding:36px 28px;display:flex;flex-direction:column;">
+        <img src="/images/icon-subscription.svg" alt="" style="width:48px;height:48px;margin-bottom:20px;">
+        <div style="font-family:var(--f-display);font-weight:600;font-size:22px;color:var(--ink);margin-bottom:8px;">Abonament</div>
+        <div style="font-family:var(--f-mono);font-size:11px;letter-spacing:.1em;color:var(--gold);margin-bottom:16px;">MIESIĘCZNY</div>
+        <p style="font-size:14px;color:var(--ink-soft);line-height:1.7;flex:1;">Stały pakiet godzin z&nbsp;priorytetowym czasem reakcji. Przewidywalny budżet, niewykorzystane godziny częściowo przechodzą na kolejny miesiąc.</p>
+        <div style="margin-top:24px;padding-top:20px;border-top:1px solid var(--border-light);">
+          <div style="font-size:13px;color:var(--ink-soft);line-height:1.8;">
+            → Priorytetowa odpowiedź (4h w&nbsp;dni robocze)<br>
+            → Umowy, regulaminy, compliance<br>
+            → Bieżące wsparcie prawne<br>
+            → Częściowy rollover godzin
+          </div>
         </div>
       </div>
+
+      <div class="reveal reveal-delay-2" style="background:var(--bg);border:1px solid var(--border-light);border-radius:12px;padding:36px 28px;display:flex;flex-direction:column;">
+        <img src="/images/icon-fractional-gc.svg" alt="" style="width:48px;height:48px;margin-bottom:20px;">
+        <div style="font-family:var(--f-display);font-weight:600;font-size:22px;color:var(--ink);margin-bottom:8px;">Fractional GC</div>
+        <div style="font-family:var(--f-mono);font-size:11px;letter-spacing:.1em;color:var(--gold);margin-bottom:16px;">STRATEGICZNY</div>
+        <p style="font-size:14px;color:var(--ink-soft);line-height:1.7;flex:1;">Pełna rola zewnętrznego General Counsel. Dołączam do zespołu jako dyrektor prawny — board meetings, zarządzanie ryzykiem, governance, nadzór nad dostawcami.</p>
+        <div style="margin-top:24px;padding-top:20px;border-top:1px solid var(--border-light);">
+          <div style="font-size:13px;color:var(--ink-soft);line-height:1.8;">
+            → Board meetings i&nbsp;governance<br>
+            → Framework zarządzania ryzykiem<br>
+            → Nadzór nad compliance<br>
+            → Wariant cross-border
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
