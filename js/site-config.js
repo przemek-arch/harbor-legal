@@ -19,8 +19,8 @@ var SITE = {
     oirp: 'WA-13427',
     phone: '+48 453 390 849',
     phoneRaw: '+48453390849',
-    email: 'pk@harbor.legal',
-    address: { pl: 'Warszawa, Polska', en: 'Warsaw, Poland' },
+    email: 'office@harbor.legal',
+    address: { pl: 'ul. Lekarska 2/1, 00-610 Warszawa', en: 'ul. Lekarska 2/1, 00-610 Warsaw, Poland' },
     linkedin: 'https://www.linkedin.com/in/przemys%C5%82aw-ko%C5%82akowski-10477960/',
     url: 'https://harbor.legal',
   },
@@ -1097,12 +1097,12 @@ var SITE = {
     pl: {
       inline: 'Europejski Obszar Gospodarczy \u00b7 ZEA \u00b7 Hongkong',
       subtitle: 'Z siecią lokalnych partnerów zapewniających pełne pokrycie regulacyjne.',
-      tags: ['Polska', 'Unia Europejska / EOG', 'Hongkong', 'ZEA', 'Cypr', 'Niemcy', 'Francja', 'Bałkany'],
+      tags: ['Polska', 'Unia Europejska / EOG', 'Hongkong', 'ZEA', 'Cypr'],
     },
     en: {
       inline: 'European Economic Area \u00b7 UAE \u00b7 Hong Kong',
       subtitle: 'With a network of local partners ensuring full regulatory coverage.',
-      tags: ['Poland', 'European Union / EEA', 'Hong Kong', 'UAE', 'Cyprus', 'Germany', 'France', 'Balkans'],
+      tags: ['Poland', 'European Union / EEA', 'Hong Kong', 'UAE', 'Cyprus'],
     }
   },
 
