@@ -26,6 +26,24 @@ var SITE = {
   },
 
 
+
+  // ── WhatsApp & Contact ──
+  whatsapp: {
+    number: '48453390849',
+    messages: {
+      pl: [
+        'Dzień dobry, chciałbym umówić konsultację.',
+        'Dzień dobry, mam pytanie dotyczące obsługi prawnej.',
+        'Dzień dobry, potrzebuję wyceny usługi prawnej.'
+      ],
+      en: [
+        'Hello, I would like to book a consultation.',
+        'Hello, I have a question about legal services.',
+        'Hello, I need a quote for legal services.'
+      ]
+    }
+  },
+
   // ── Nawigacja ──
   nav: {
     pl: {
