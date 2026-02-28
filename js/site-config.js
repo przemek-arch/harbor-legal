@@ -70,6 +70,7 @@ var SITE = {
           ]
         },
         { label: 'Współpraca', href: '/wspolpraca/' },
+        { label: 'Wycena', href: '/wycena/' },
         { label: 'O\u00a0kancelarii', href: '/o-kancelarii/' },
         { label: 'Blog', href: '/blog/' },
         { label: 'Kontakt', href: '/kontakt/', cta: true },
