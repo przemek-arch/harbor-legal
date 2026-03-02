@@ -24,83 +24,517 @@
 
   <!-- Usługi -->
   <url>
-    <loc>https://harbor.legal/uslugi/</loc>
-    <lastmod>2026-02-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://harbor.legal/uslugi/</loc><lastmod>2026-02-22</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/uslugi/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/services/" />
   </url>
-  <url><loc>https://harbor.legal/uslugi/technologie-fintech/</loc><lastmod>2026-02-22</lastmod><priority>0.8</priority></url>
-  <url><loc>https://harbor.legal/uslugi/obsluga-prawna-firm/</loc><lastmod>2026-02-22</lastmod><priority>0.8</priority></url>
-  <url><loc>https://harbor.legal/uslugi/spory-i-postepowania/</loc><lastmod>2026-02-22</lastmod><priority>0.8</priority></url>
-  <url><loc>https://harbor.legal/en/services/</loc><lastmod>2026-02-22</lastmod><priority>0.7</priority></url>
+  <url>
+    <loc>https://harbor.legal/en/services/</loc><lastmod>2026-02-22</lastmod><priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/uslugi/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/services/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/uslugi/technologie-fintech/</loc><lastmod>2026-02-22</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/uslugi/technologie-fintech/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/services/technology-fintech/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/en/services/technology-fintech/</loc><lastmod>2026-02-22</lastmod><priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/uslugi/technologie-fintech/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/services/technology-fintech/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/uslugi/obsluga-prawna-firm/</loc><lastmod>2026-02-22</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/uslugi/obsluga-prawna-firm/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/services/business-legal-services/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/en/services/business-legal-services/</loc><lastmod>2026-02-22</lastmod><priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/uslugi/obsluga-prawna-firm/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/services/business-legal-services/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/uslugi/spory-i-postepowania/</loc><lastmod>2026-02-22</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/uslugi/spory-i-postepowania/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/services/disputes-litigation/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/en/services/disputes-litigation/</loc><lastmod>2026-02-22</lastmod><priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/uslugi/spory-i-postepowania/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/services/disputes-litigation/" />
+  </url>
 
   <!-- Współpraca -->
   <url>
-    <loc>https://harbor.legal/wspolpraca/</loc>
-    <lastmod>2026-02-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://harbor.legal/wspolpraca/</loc><lastmod>2026-02-22</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/wspolpraca/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/cooperation/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/en/cooperation/</loc><lastmod>2026-02-22</lastmod><priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/wspolpraca/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/cooperation/" />
   </url>
 
   <!-- O kancelarii -->
   <url>
-    <loc>https://harbor.legal/o-kancelarii/</loc>
-    <lastmod>2026-02-22</lastmod>
-    <priority>0.7</priority>
+    <loc>https://harbor.legal/o-kancelarii/</loc><lastmod>2026-02-22</lastmod><priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/o-kancelarii/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/about/" />
   </url>
-  <url><loc>https://harbor.legal/en/about/</loc><lastmod>2026-02-22</lastmod><priority>0.6</priority></url>
-
-  <!-- Blog -->
   <url>
-    <loc>https://harbor.legal/blog/</loc>
-    <lastmod>2026-02-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://harbor.legal/en/about/</loc><lastmod>2026-02-22</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/o-kancelarii/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/about/" />
+  </url>
+
+  <!-- Blog index -->
+  <url>
+    <loc>https://harbor.legal/blog/</loc><lastmod>2026-02-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/" />
   </url>
-  <url><loc>https://harbor.legal/en/blog/</loc><lastmod>2026-02-22</lastmod><priority>0.7</priority></url>
+  <url>
+    <loc>https://harbor.legal/en/blog/</loc><lastmod>2026-02-22</lastmod><priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/" />
+  </url>
 
   <!-- Kontakt -->
   <url>
-    <loc>https://harbor.legal/kontakt/</loc>
-    <lastmod>2026-02-22</lastmod>
-    <priority>0.7</priority>
+    <loc>https://harbor.legal/kontakt/</loc><lastmod>2026-02-22</lastmod><priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/kontakt/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/contact/" />
   </url>
-  <url><loc>https://harbor.legal/en/contact/</loc><lastmod>2026-02-22</lastmod><priority>0.6</priority></url>
+  <url>
+    <loc>https://harbor.legal/en/contact/</loc><lastmod>2026-02-22</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/kontakt/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/contact/" />
+  </url>
 
   <!-- Wycena -->
   <url>
-    <loc>https://harbor.legal/wycena/</loc>
-    <lastmod>2026-02-22</lastmod>
-    <priority>0.7</priority>
+    <loc>https://harbor.legal/wycena/</loc><lastmod>2026-02-22</lastmod><priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/wycena/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/pricing/" />
   </url>
-  <url><loc>https://harbor.legal/en/pricing/</loc><lastmod>2026-02-22</lastmod><priority>0.6</priority></url>
+  <url>
+    <loc>https://harbor.legal/en/pricing/</loc><lastmod>2026-02-22</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/wycena/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/pricing/" />
+  </url>
 
-  <!-- Blog artykuły -->
-  <url><loc>https://harbor.legal/blog/drugie-weto-polska-implementacja-mica/</loc><lastmod>2026-02-15</lastmod><priority>0.7</priority></url>
-  <url><loc>https://harbor.legal/blog/umowa-saas-b2b-kluczowe-klauzule/</loc><lastmod>2026-02-03</lastmod><priority>0.6</priority></url>
-  <url><loc>https://harbor.legal/blog/platnosci-transgraniczne-regulacje-polskie-fintechy/</loc><lastmod>2026-01-20</lastmod><priority>0.6</priority></url>
-  <url><loc>https://harbor.legal/blog/fractional-gc-vs-kancelaria-porownanie-kosztow/</loc><lastmod>2026-01-05</lastmod><priority>0.6</priority></url>
-  <url><loc>https://harbor.legal/blog/dsa-pierwsza-kara-x-twitter-120-milionow/</loc><lastmod>2025-12-18</lastmod><priority>0.6</priority></url>
-  <url><loc>https://harbor.legal/blog/polska-weto-mica-wplyw-rynek-krypto/</loc><lastmod>2025-12-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://harbor.legal/blog/audyt-gdpr-startup-przed-seria-a/</loc><lastmod>2025-11-25</lastmod><priority>0.6</priority></url>
-  <url><loc>https://harbor.legal/blog/digital-omnibus-uproszczenie-ai-gdpr/</loc><lastmod>2025-11-15</lastmod><priority>0.6</priority></url>
-  <url><loc>https://harbor.legal/blog/dsa-raportowanie-przejrzystosci-nowe-zasady-2025/</loc><lastmod>2025-11-05</lastmod><priority>0.6</priority></url>
-  <url><loc>https://harbor.legal/blog/esop-polska-spolka-praktyczny-przewodnik/</loc><lastmod>2025-10-28</lastmod><priority>0.6</priority></url>
-  <url><loc>https://harbor.legal/blog/eu-ai-act-gpai-obowiazki-sierpien-2025/</loc><lastmod>2025-10-18</lastmod><priority>0.6</priority></url>
-  <url><loc>https://harbor.legal/blog/fractional-gc-startup-dyrektor-prawny/</loc><lastmod>2025-10-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://harbor.legal/blog/gdpr-transfery-danych-panstwa-trzecie-schrems/</loc><lastmod>2025-09-28</lastmod><priority>0.6</priority></url>
-  <url><loc>https://harbor.legal/blog/mica-2025-co-musi-wiedziec-kazdy-fintech/</loc><lastmod>2025-09-18</lastmod><priority>0.6</priority></url>
-  <url><loc>https://harbor.legal/blog/mica-okres-przejsciowy-przygotowanie-casp/</loc><lastmod>2025-09-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://harbor.legal/blog/psd3-psr-rewolucja-europejskie-platnosci/</loc><lastmod>2025-08-28</lastmod><priority>0.6</priority></url>
+  <!-- Polityka prywatności -->
+  <url>
+    <loc>https://harbor.legal/polityka-prywatnosci/</loc><lastmod>2026-02-22</lastmod><priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/polityka-prywatnosci/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/privacy-policy/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/en/privacy-policy/</loc><lastmod>2026-02-22</lastmod><priority>0.2</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/polityka-prywatnosci/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/privacy-policy/" />
+  </url>
+
+  <url>
+    <loc>https://harbor.legal/blog/audyt-gdpr-startup-przed-seria-a/</loc><lastmod>2025-10-20</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/audyt-gdpr-startup-przed-seria-a/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/gdpr-audit-startup-before-series-a/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/en/blog/gdpr-audit-startup-before-series-a/</loc><lastmod>2025-10-20</lastmod><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/audyt-gdpr-startup-przed-seria-a/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/gdpr-audit-startup-before-series-a/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/blog/digital-omnibus-uproszczenie-ai-gdpr/</loc><lastmod>2025-11-24</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/digital-omnibus-uproszczenie-ai-gdpr/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/digital-omnibus-simplification-ai-gdpr/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/en/blog/digital-omnibus-simplification-ai-gdpr/</loc><lastmod>2025-11-24</lastmod><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/digital-omnibus-uproszczenie-ai-gdpr/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/digital-omnibus-simplification-ai-gdpr/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/blog/drugie-weto-polska-implementacja-mica/</loc><lastmod>2026-02-15</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/drugie-weto-polska-implementacja-mica/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/second-veto-poland-mica-implementation/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/en/blog/second-veto-poland-mica-implementation/</loc><lastmod>2026-02-15</lastmod><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/drugie-weto-polska-implementacja-mica/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/second-veto-poland-mica-implementation/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/blog/dsa-pierwsza-kara-x-twitter-120-milionow/</loc><lastmod>2025-12-18</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/dsa-pierwsza-kara-x-twitter-120-milionow/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/dsa-first-fine-x-twitter-120-million/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/en/blog/dsa-first-fine-x-twitter-120-million/</loc><lastmod>2025-12-18</lastmod><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/dsa-pierwsza-kara-x-twitter-120-milionow/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/dsa-first-fine-x-twitter-120-million/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/blog/dsa-raportowanie-przejrzystosci-nowe-zasady-2025/</loc><lastmod>2025-09-01</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/dsa-raportowanie-przejrzystosci-nowe-zasady-2025/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/dsa-transparency-reporting-new-rules-2025/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/en/blog/dsa-transparency-reporting-new-rules-2025/</loc><lastmod>2025-09-01</lastmod><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/dsa-raportowanie-przejrzystosci-nowe-zasady-2025/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/dsa-transparency-reporting-new-rules-2025/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/blog/due-diligence-prawne-przed-przejecie-firmy/</loc><lastmod>2025-05-26</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/due-diligence-prawne-przed-przejecie-firmy/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/legal-due-diligence-before-company-acquisition/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/en/blog/legal-due-diligence-before-company-acquisition/</loc><lastmod>2025-05-26</lastmod><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/due-diligence-prawne-przed-przejecie-firmy/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/legal-due-diligence-before-company-acquisition/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/blog/egzekucja-komornicza-jak-skutecznie-odzyskac-dlug/</loc><lastmod>2025-10-13</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/egzekucja-komornicza-jak-skutecznie-odzyskac-dlug/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/bailiff-enforcement-effective-debt-recovery-poland/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/en/blog/bailiff-enforcement-effective-debt-recovery-poland/</loc><lastmod>2025-10-13</lastmod><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/egzekucja-komornicza-jak-skutecznie-odzyskac-dlug/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/bailiff-enforcement-effective-debt-recovery-poland/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/blog/esop-polska-spolka-praktyczny-przewodnik/</loc><lastmod>2025-10-01</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/esop-polska-spolka-praktyczny-przewodnik/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/esop-polish-company-practical-guide/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/en/blog/esop-polish-company-practical-guide/</loc><lastmod>2025-10-01</lastmod><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/esop-polska-spolka-praktyczny-przewodnik/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/esop-polish-company-practical-guide/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/blog/eu-ai-act-gpai-obowiazki-sierpien-2025/</loc><lastmod>2025-08-18</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/eu-ai-act-gpai-obowiazki-sierpien-2025/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/eu-ai-act-gpai-obligations-august-2025/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/en/blog/eu-ai-act-gpai-obligations-august-2025/</loc><lastmod>2025-08-18</lastmod><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/eu-ai-act-gpai-obowiazki-sierpien-2025/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/eu-ai-act-gpai-obligations-august-2025/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/blog/fractional-gc-startup-dyrektor-prawny/</loc><lastmod>2025-01-28</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/fractional-gc-startup-dyrektor-prawny/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/fractional-gc-startup-legal-director/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/en/blog/fractional-gc-startup-legal-director/</loc><lastmod>2025-01-28</lastmod><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/fractional-gc-startup-dyrektor-prawny/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/fractional-gc-startup-legal-director/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/blog/fractional-gc-vs-kancelaria-porownanie-kosztow/</loc><lastmod>2026-01-05</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/fractional-gc-vs-kancelaria-porownanie-kosztow/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/fractional-gc-vs-law-firm-cost-comparison/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/en/blog/fractional-gc-vs-law-firm-cost-comparison/</loc><lastmod>2026-01-05</lastmod><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/fractional-gc-vs-kancelaria-porownanie-kosztow/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/fractional-gc-vs-law-firm-cost-comparison/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/blog/gdpr-transfery-danych-panstwa-trzecie-schrems/</loc><lastmod>2024-12-20</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/gdpr-transfery-danych-panstwa-trzecie-schrems/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/gdpr-third-country-data-transfers-schrems/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/en/blog/gdpr-third-country-data-transfers-schrems/</loc><lastmod>2024-12-20</lastmod><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/gdpr-transfery-danych-panstwa-trzecie-schrems/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/gdpr-third-country-data-transfers-schrems/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/blog/kara-umowna-miarkowanie-przez-sad/</loc><lastmod>2025-09-22</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/kara-umowna-miarkowanie-przez-sad/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/contractual-penalties-judicial-reduction-poland/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/en/blog/contractual-penalties-judicial-reduction-poland/</loc><lastmod>2025-09-22</lastmod><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/kara-umowna-miarkowanie-przez-sad/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/contractual-penalties-judicial-reduction-poland/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/blog/klauzule-arbitrazowe-w-umowach-b2b/</loc><lastmod>2025-06-09</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/klauzule-arbitrazowe-w-umowach-b2b/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/arbitration-clauses-in-b2b-contracts/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/en/blog/arbitration-clauses-in-b2b-contracts/</loc><lastmod>2025-06-09</lastmod><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/klauzule-arbitrazowe-w-umowach-b2b/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/arbitration-clauses-in-b2b-contracts/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/blog/mediacja-gospodarcza-alternatywa-dla-procesu/</loc><lastmod>2025-05-12</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/mediacja-gospodarcza-alternatywa-dla-procesu/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/commercial-mediation-alternative-to-litigation/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/en/blog/commercial-mediation-alternative-to-litigation/</loc><lastmod>2025-05-12</lastmod><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/mediacja-gospodarcza-alternatywa-dla-procesu/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/commercial-mediation-alternative-to-litigation/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/blog/mica-2025-co-musi-wiedziec-kazdy-fintech/</loc><lastmod>2025-02-10</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/mica-2025-co-musi-wiedziec-kazdy-fintech/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/mica-2025-what-every-fintech-needs-to-know/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/en/blog/mica-2025-what-every-fintech-needs-to-know/</loc><lastmod>2025-02-10</lastmod><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/mica-2025-co-musi-wiedziec-kazdy-fintech/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/mica-2025-what-every-fintech-needs-to-know/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/blog/mica-okres-przejsciowy-przygotowanie-casp/</loc><lastmod>2025-09-15</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/mica-okres-przejsciowy-przygotowanie-casp/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/mica-transitional-period-casp-preparation/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/en/blog/mica-transitional-period-casp-preparation/</loc><lastmod>2025-09-15</lastmod><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/mica-okres-przejsciowy-przygotowanie-casp/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/mica-transitional-period-casp-preparation/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/blog/nakaz-zaplaty-postepowanie-nakazowe-sprzeciw/</loc><lastmod>2025-03-10</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/nakaz-zaplaty-postepowanie-nakazowe-sprzeciw/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/payment-order-proceedings-how-to-challenge/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/en/blog/payment-order-proceedings-how-to-challenge/</loc><lastmod>2025-03-10</lastmod><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/nakaz-zaplaty-postepowanie-nakazowe-sprzeciw/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/payment-order-proceedings-how-to-challenge/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/blog/obowiazki-aml-przeciwdzialanie-praniu-pieniedzy/</loc><lastmod>2026-02-16</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/obowiazki-aml-przeciwdzialanie-praniu-pieniedzy/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/aml-obligations-anti-money-laundering-poland/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/en/blog/aml-obligations-anti-money-laundering-poland/</loc><lastmod>2026-02-16</lastmod><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/obowiazki-aml-przeciwdzialanie-praniu-pieniedzy/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/aml-obligations-anti-money-laundering-poland/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/blog/ochrona-danych-osobowych-gdpr-w-firmie/</loc><lastmod>2025-08-18</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/ochrona-danych-osobowych-gdpr-w-firmie/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/gdpr-compliance-for-businesses-poland/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/en/blog/gdpr-compliance-for-businesses-poland/</loc><lastmod>2025-08-18</lastmod><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/ochrona-danych-osobowych-gdpr-w-firmie/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/gdpr-compliance-for-businesses-poland/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/blog/odpowiedzialnosc-czlonkow-zarzadu-art-299-ksh/</loc><lastmod>2025-08-11</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/odpowiedzialnosc-czlonkow-zarzadu-art-299-ksh/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/board-member-liability-article-299-ksh/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/en/blog/board-member-liability-article-299-ksh/</loc><lastmod>2025-08-11</lastmod><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/odpowiedzialnosc-czlonkow-zarzadu-art-299-ksh/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/board-member-liability-article-299-ksh/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/blog/platnosci-transgraniczne-regulacje-polskie-fintechy/</loc><lastmod>2026-01-20</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/platnosci-transgraniczne-regulacje-polskie-fintechy/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/cross-border-payments-regulations-polish-fintechs/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/en/blog/cross-border-payments-regulations-polish-fintechs/</loc><lastmod>2026-01-20</lastmod><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/platnosci-transgraniczne-regulacje-polskie-fintechy/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/cross-border-payments-regulations-polish-fintechs/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/blog/polska-weto-mica-wplyw-rynek-krypto/</loc><lastmod>2025-12-08</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/polska-weto-mica-wplyw-rynek-krypto/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/poland-mica-veto-crypto-market-impact/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/en/blog/poland-mica-veto-crypto-market-impact/</loc><lastmod>2025-12-08</lastmod><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/polska-weto-mica-wplyw-rynek-krypto/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/poland-mica-veto-crypto-market-impact/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/blog/postepowanie-uodo-kontrola-kara-pieniezna/</loc><lastmod>2025-11-17</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/postepowanie-uodo-kontrola-kara-pieniezna/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/uodo-proceedings-gdpr-inspection-administrative-fines/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/en/blog/uodo-proceedings-gdpr-inspection-administrative-fines/</loc><lastmod>2025-11-17</lastmod><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/postepowanie-uodo-kontrola-kara-pieniezna/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/uodo-proceedings-gdpr-inspection-administrative-fines/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/blog/postepowanie-uokik-praktyki-naruszajace-konkurencje/</loc><lastmod>2025-07-07</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/postepowanie-uokik-praktyki-naruszajace-konkurencje/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/uokik-proceedings-competition-law-violations/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/en/blog/uokik-proceedings-competition-law-violations/</loc><lastmod>2025-07-07</lastmod><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/postepowanie-uokik-praktyki-naruszajace-konkurencje/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/uokik-proceedings-competition-law-violations/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/blog/przedawnienie-roszczen-gospodarczych-terminy/</loc><lastmod>2026-01-12</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/przedawnienie-roszczen-gospodarczych-terminy/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/statute-of-limitations-commercial-claims-poland/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/en/blog/statute-of-limitations-commercial-claims-poland/</loc><lastmod>2026-01-12</lastmod><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/przedawnienie-roszczen-gospodarczych-terminy/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/statute-of-limitations-commercial-claims-poland/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/blog/psd3-psr-rewolucja-europejskie-platnosci/</loc><lastmod>2025-01-15</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/psd3-psr-rewolucja-europejskie-platnosci/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/psd3-psr-european-payments-revolution/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/en/blog/psd3-psr-european-payments-revolution/</loc><lastmod>2025-01-15</lastmod><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/psd3-psr-rewolucja-europejskie-platnosci/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/psd3-psr-european-payments-revolution/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/blog/regulamin-pracy-zdalnej-obowiazki-pracodawcy/</loc><lastmod>2025-04-28</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/regulamin-pracy-zdalnej-obowiazki-pracodawcy/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/remote-work-policy-employer-obligations-poland/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/en/blog/remote-work-policy-employer-obligations-poland/</loc><lastmod>2025-04-28</lastmod><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/regulamin-pracy-zdalnej-obowiazki-pracodawcy/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/remote-work-policy-employer-obligations-poland/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/blog/regulamin-sklepu-internetowego-ecommerce/</loc><lastmod>2025-12-22</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/regulamin-sklepu-internetowego-ecommerce/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/ecommerce-terms-conditions-online-store-poland/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/en/blog/ecommerce-terms-conditions-online-store-poland/</loc><lastmod>2025-12-22</lastmod><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/regulamin-sklepu-internetowego-ecommerce/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/ecommerce-terms-conditions-online-store-poland/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/blog/restrukturyzacja-firmy-zamiast-upadlosci/</loc><lastmod>2026-02-09</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/restrukturyzacja-firmy-zamiast-upadlosci/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/business-restructuring-instead-of-bankruptcy-poland/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/en/blog/business-restructuring-instead-of-bankruptcy-poland/</loc><lastmod>2026-02-09</lastmod><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/restrukturyzacja-firmy-zamiast-upadlosci/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/business-restructuring-instead-of-bankruptcy-poland/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/blog/spor-wspolnikow-sposoby-rozwiazania/</loc><lastmod>2025-12-01</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/spor-wspolnikow-sposoby-rozwiazania/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/shareholder-disputes-resolution-methods-poland/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/en/blog/shareholder-disputes-resolution-methods-poland/</loc><lastmod>2025-12-01</lastmod><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/spor-wspolnikow-sposoby-rozwiazania/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/shareholder-disputes-resolution-methods-poland/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/blog/umowa-dystrybucyjna-kluczowe-postanowienia/</loc><lastmod>2025-06-23</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/umowa-dystrybucyjna-kluczowe-postanowienia/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/distribution-agreement-key-provisions/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/en/blog/distribution-agreement-key-provisions/</loc><lastmod>2025-06-23</lastmod><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/umowa-dystrybucyjna-kluczowe-postanowienia/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/distribution-agreement-key-provisions/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/blog/umowa-joint-venture-wspolne-przedsiewziecie/</loc><lastmod>2026-01-19</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/umowa-joint-venture-wspolne-przedsiewziecie/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/joint-venture-agreement-poland-key-provisions/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/en/blog/joint-venture-agreement-poland-key-provisions/</loc><lastmod>2026-01-19</lastmod><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/umowa-joint-venture-wspolne-przedsiewziecie/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/joint-venture-agreement-poland-key-provisions/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/blog/umowa-o-zachowaniu-poufnosci-nda-praktyczny-przewodnik/</loc><lastmod>2025-03-24</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/umowa-o-zachowaniu-poufnosci-nda-praktyczny-przewodnik/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/nda-confidentiality-agreement-practical-guide/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/en/blog/nda-confidentiality-agreement-practical-guide/</loc><lastmod>2025-03-24</lastmod><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/umowa-o-zachowaniu-poufnosci-nda-praktyczny-przewodnik/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/nda-confidentiality-agreement-practical-guide/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/blog/umowa-o-zakazie-konkurencji-pracownik-wspolpracownik/</loc><lastmod>2025-11-24</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/umowa-o-zakazie-konkurencji-pracownik-wspolpracownik/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/non-compete-agreement-employees-contractors-poland/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/en/blog/non-compete-agreement-employees-contractors-poland/</loc><lastmod>2025-11-24</lastmod><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/umowa-o-zakazie-konkurencji-pracownik-wspolpracownik/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/non-compete-agreement-employees-contractors-poland/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/blog/umowa-saas-b2b-kluczowe-klauzule/</loc><lastmod>2026-02-03</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/umowa-saas-b2b-kluczowe-klauzule/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/b2b-saas-agreement-key-clauses/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/en/blog/b2b-saas-agreement-key-clauses/</loc><lastmod>2026-02-03</lastmod><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/umowa-saas-b2b-kluczowe-klauzule/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/b2b-saas-agreement-key-clauses/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/blog/umowa-saas-licencja-oprogramowania/</loc><lastmod>2025-09-15</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/umowa-saas-licencja-oprogramowania/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/saas-agreement-software-license-key-clauses/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/en/blog/saas-agreement-software-license-key-clauses/</loc><lastmod>2025-09-15</lastmod><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/umowa-saas-licencja-oprogramowania/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/saas-agreement-software-license-key-clauses/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/blog/zabezpieczenie-roszczenia-przed-procesem/</loc><lastmod>2025-04-14</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/zabezpieczenie-roszczenia-przed-procesem/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/interim-measures-securing-claims-before-trial/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/en/blog/interim-measures-securing-claims-before-trial/</loc><lastmod>2025-04-14</lastmod><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/zabezpieczenie-roszczenia-przed-procesem/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/interim-measures-securing-claims-before-trial/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/blog/zakladanie-spolki-z-oo-krok-po-kroku/</loc><lastmod>2025-10-20</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/zakladanie-spolki-z-oo-krok-po-kroku/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/setting-up-polish-sp-z-oo-step-by-step/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/en/blog/setting-up-polish-sp-z-oo-step-by-step/</loc><lastmod>2025-10-20</lastmod><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/zakladanie-spolki-z-oo-krok-po-kroku/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/setting-up-polish-sp-z-oo-step-by-step/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/blog/zatrudnienie-cudzoziemca-pozwolenie-na-prace/</loc><lastmod>2025-07-21</lastmod><priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/zatrudnienie-cudzoziemca-pozwolenie-na-prace/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/hiring-foreign-employees-work-permits-poland/" />
+  </url>
+  <url>
+    <loc>https://harbor.legal/en/blog/hiring-foreign-employees-work-permits-poland/</loc><lastmod>2025-07-21</lastmod><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://harbor.legal/blog/zatrudnienie-cudzoziemca-pozwolenie-na-prace/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://harbor.legal/en/blog/hiring-foreign-employees-work-permits-poland/" />
+  </url>
 
 </urlset>
